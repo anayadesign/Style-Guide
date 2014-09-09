@@ -145,6 +145,9 @@ a:hover {
   display: block;
   margin: 0 0 8px; }
 
+.btn-group-horizontal {
+  font-size: 0; }
+
 .btn-group-horizontal .btn {
   margin: 0; }
 
