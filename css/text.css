@@ -18,7 +18,10 @@ h1 {
   color: #222; }
 
 h1.heading-xl {
-  font-size: 3em; }
+  font-size: 42px; }
+
+h1.heading-xxl {
+  font-size: 60px; }
 
 h2 {
   margin: 12px 0 24px;
@@ -26,7 +29,7 @@ h2 {
   color: #000; }
 
 h2.heading-xl {
-  font-size: 2.5em; }
+  font-size: 35px; }
 
 h3 {
   font-size: 22px;

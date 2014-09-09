@@ -1,0 +1,25 @@
+ul, ol {}
+
+ul {
+    li {
+
+    }
+}
+
+ol {
+    li {
+
+    }
+}
+
+.leftnav {
+    padding: 0;
+    color: #878787;
+    list-style: none;
+    font: normal normal 11px 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+    .leftnav > li:first-child {
+        color: #000;
+        font-weight: bold;
+    }

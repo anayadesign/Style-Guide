@@ -18,7 +18,10 @@ h1 {
   color: #222; }
 
 h1.heading-xl {
-  font-size: 3em; }
+  font-size: 42px; }
+
+h1.heading-xxl {
+  font-size: 60px; }
 
 h2 {
   margin: 12px 0 24px;
@@ -26,7 +29,7 @@ h2 {
   color: #000; }
 
 h2.heading-xl {
-  font-size: 2.5em; }
+  font-size: 35px; }
 
 h3 {
   font-size: 22px;
@@ -46,6 +49,17 @@ a:hover {
   font-family: Flood, Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal; }
+
+.leftnav {
+  padding: 0;
+  color: #878787;
+  list-style: none;
+  font: normal normal 11px 'Times New Roman', Times, serif;
+  text-transform: uppercase; }
+
+.leftnav > li:first-child {
+  color: #000;
+  font-weight: bold; }
 
 .btn {
   font: normal normal 24px/1 BebasNeueRegular, 'Bebas Neue Regular', BebasNeue, 'Bebas Neue', Arial, sans-serif;
