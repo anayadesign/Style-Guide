@@ -14,6 +14,8 @@
 
     .tabs-menu li:hover {
         background-color: #000;
+        border: 1px solid #000;
+        border-bottom: none;
     }
     .tabs-menu li.current {
         position: relative;
