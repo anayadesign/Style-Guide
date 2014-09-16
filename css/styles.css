@@ -281,6 +281,7 @@ Grid
 .tabs-menu li.current {
   position: relative;
   background-color: #fff;
+  border: 1px solid #d4d4d1;
   border-bottom: 1px solid #fff;
   z-index: 5; }
 
