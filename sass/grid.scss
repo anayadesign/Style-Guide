@@ -3,7 +3,7 @@ Container
 -------------------------------------------------- */
 div#container, div.container {
     position: relative;
-    width: 1008px;
+    max-width: 1008px;
     margin: 0 auto;
     padding: 0; }
 
@@ -14,7 +14,7 @@ Grid
     margin: 0 0 18px -12px; }
 .col, .cols {
     float: left;
-    display: inline;
+    display: block;
     margin: 0 0 0 12px; }
 
 .one { width: 73px; }

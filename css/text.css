@@ -14,30 +14,30 @@ h1, h2, h3, h4 {
 
 h1 {
   margin: 24px 0;
-  font-size: 36px;
+  font-size: 42px;
   color: #222; }
 
 h1.heading-xl {
-  font-size: 42px; }
-
-h1.heading-xxl {
   font-size: 60px; }
 
 h2 {
   margin: 12px 0 24px;
-  font-size: 24px;
+  font-size: 36px;
   color: #000; }
 
-h2.heading-xl {
-  font-size: 35px; }
-
 h3 {
-  font-size: 22px;
+  font-size: 24px;
   color: #000; }
 
 h4 {
   font-size: 18px;
   color: #000; }
+
+h5 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1; }
 
 a {
   color: inherit; }
