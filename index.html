@@ -1,226 +1,170 @@
 <!doctype html>
 <html lang="en-US">
 <head>
-<title>Art.com Styles</title>
-<link rel="stylesheet" href="css/styles.css">
-<!--[if gte IE 9]>
-<style type="text/css">
-/*<![CDATA[*/
-.btn {
-filter: none;
-}
-/*]]>*/
-</style>
-<![endif]-->
-<style>
-    .test-grid .col {
-        background-color: #DDD;
-        padding: 10px 0;
-        text-align: center;
-    }
-</style>
+  <title>Art.com Styles</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="three col">
-            </div>
-            <div class="nine col">
-                <h1>Header Level 1</h1>
-                <h2>Header Level 2</h2>
-                <h3>Header Level 3</h3>
-                <h4>Header Level 4</h4>
-                <h1 class="flood">Header Level 1 - Flood</h1>
-                <h2 class="flood">Header Level 2 - Flood</h2>
-                <p>Paragraph tag <strong>Strong tag. ALL CAPS</strong> senectus et <em>Emphasis, ALL CAPS.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Condimentum sed, <code>CODE TAG</code>, ornare sit amet, wisi. Aenean fermentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Link, ALL CAPS</a> in turpis pulvinar facilisis. Ut felis.</p>
-
-                <h1>Buttons</h1>
-                <a class="btn btn-primary">primary</a>
-                <a class="btn btn-secondary">secondary</a>
-                <a class="btn btn-inactive">inactive</a>
-                <br>
-                <a class="btn btn-primary btn-small">primary</a>
-                <a class="btn btn-secondary btn-small">secondary</a>
-                <a class="btn btn-inactive btn-small">inactive</a>
-
-                <h1>Button Groups</h1>
-                <div class="btn-group-vertical">
-                    <a class="btn btn-primary">add to cart</a>
-                    <a class="btn btn-secondary">frame it</a>
-                </div>
-                <div class="btn-group-horizontal">
-                    <a class="btn btn-secondary btn-small">mount</a>
-                    <a class="btn btn-secondary btn-small">laminate</a>
-                    <a class="btn btn-secondary btn-small">canvas</a>
-                </div>
-
-                <h1>Lists</h1>
-                <ol>Ordered List
-                    <li>List item 1</li>
-                    <li>List item 2</li>
-                    <li>Nested list
-                        <ol>
-                            <li>List item 1</li>
-                            <li>List item 2</li>
-                        </ol>
-                    </li>
-                </ol>
-                <ul>Unordered List
-                    <li>List item 1</li>
-                    <li>List item 2</li>
-                    <li>Nested list
-                        <ul>
-                            <li>List item 1</li>
-                            <li>List item 2</li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="leftnav">
-                    <li>Left Nav List</li>
-                    <li>List item 1</li>
-                    <li>List item 2</li>
-                    <li>Nested list
-                        <ul>
-                            <li>List item 1</li>
-                            <li>List item 2</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h1>Blockquote</h1>
-                <blockquote>
-                    <p>Blockquote paragraph, this is a blockquote paragraph. Quotes on quotes on quotes.<cite>Author</cite></p>
-
-                </blockquote>
-                <h1>Code</h1>
-                <pre><code>
-                #pre code a {
-                	display: block;
-                	width: 300px;
-                	height: 80px;
-                }
-                </code></pre>
-
-                <h1>Forms</h1>
-                <form action="#" method="post">
-                    <div>
-                        <label for="name">Text Input Label:</label>
-                        <input type="text" name="name" id="name" value="" tabindex="1">
-                    </div>
-                    <div>
-                        <p>Radio Button Title</p>
-                        <label for="radio-choice-1">Choice 1</label>
-                        <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1">
-                        <label for="radio-choice-2">Choice 2</label>
-                        <input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2">
-                    </div>
-                    <div>
-                        <label for="select-choice">Select Dropdown Label:</label>
-                        <select name="select-choice" id="select-choice">
-                            <option value="Choice 1">Choice 1</option>
-                            <option value="Choice 2">Choice 2</option>
-                            <option value="Choice 3">Choice 3</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="textarea">Textarea:</label>
-                        <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
-                    </div>
-                    <div>
-                        <label for="checkbox">Checkbox:</label>
-                        <input type="checkbox" name="checkbox" id="checkbox">
-                    </div>
-                    <div>
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-
-                <h1>Tables</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Heading 1</th>
-                            <th>Heading 2</th>
-                            <th>Heading 3</th>
-                            <th>Heading 4</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>asdf</td>
-                            <td>fghj</td>
-                            <td>qwer</td>
-                            <td>rtyu</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h1>Tabs</h1>
-                <div class="tabs-container">
-                    <ul class="tabs-menu">
-                        <li class="current">
-                            <a href="#tab-1">You'll Like</a>
-                        </li>
-                        <li>
-                            <a href="#tab-2">Related Categories</a>
-                        </li>
-
-                    </ul>
-                    <div class="content-container">
-                        <div id="tab-1" class="tab-content">
-                            <p>Tab 1 Content</p>
-                        </div>
-                        <div id="tab-2" class="tab-content">
-                            <p>Tab 2 Content</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+  <div class="container">
+    <h1 class="heading-xl">Styleguide</h1>
+      <section id="typography" class="style-section">
+        <div class="style-heading">
+          <h2>Headings</h2>
         </div>
-    </div>
-    <h1>Grid system</h1>
-    <div class="container test-grid">
-        <div class="row">
-            <div class="one col">One</div>
-            <div class="one col">One</div>
-            <div class="one col">One</div>
-            <div class="one col">One</div>
-            <div class="one col">One</div>
-            <div class="one col">One</div>
-            <div class="one col">One</div>
-            <div class="one col">One</div>
-            <div class="one col">One</div>
-            <div class="one col">One</div>
-            <div class="one col">One</div>
-            <div class="one col">One</div>
+        <div class="style-content">
+          <h1 class="heading-xl">Heading Level 1 - XL</h1>
+          <h1>Heading Level 1</h1>
+          <h2>Heading Level 2</h2>
+          <h3>Heading Level 3</h3>
+          <h4>Heading Level 4</h4>
+          <h1 class="flood">Header Level 1 - Flood</h1>
+          <p><code>.flood</code> can be added to display the Flood font.</p>
+          <p>Paragraph tag <strong>Strong tag. ALL CAPS</strong> senectus et <em>Emphasis, ALL CAPS.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Condimentum sed, <code>CODE TAG</code>, ornare sit amet, wisi. Aenean fermentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Link, ALL CAPS</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+          <h2>Blockquote</h2>
+          <blockquote>
+              <p>Blockquote paragraph, this is a blockquote paragraph. Quotes on quotes on quotes.<cite>Author</cite></p>
+          </blockquote>
+
+          <h2>Code</h2>
+          <pre>#pre code a {
+  display: block;
+  width: 300px;
+  height: 80px;
+}</pre>
+
+          <h2>Lists</h2>
+          <ol>Ordered List
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>Nested list
+                  <ol>
+                      <li>List item 1</li>
+                      <li>List item 2</li>
+                  </ol>
+              </li>
+          </ol>
+          <ul>Unordered List
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>Nested list
+                  <ul>
+                      <li>List item 1</li>
+                      <li>List item 2</li>
+                  </ul>
+              </li>
+          </ul>
+          <ul class="leftnav">
+              <li>Left Nav List</li>
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>Nested list
+                  <ul>
+                      <li>List item 1</li>
+                      <li>List item 2</li>
+                  </ul>
+              </li>
+          </ul>
         </div>
-        <div class="row">
-            <div class="two col">Two</div>
-            <div class="two col">Two</div>
-            <div class="two col">Two</div>
-            <div class="two col">Two</div>
-            <div class="two col">Two</div>
-            <div class="two col">Two</div>
+      </section>
+      <section id="buttons">
+        <h2>Buttons</h2>
+        <a class="btn btn-primary">primary</a>
+        <a class="btn btn-secondary">secondary</a>
+        <a class="btn btn-inactive">inactive</a>
+        <br>
+        <a class="btn btn-primary btn-small">primary</a>
+        <a class="btn btn-secondary btn-small">secondary</a>
+        <a class="btn btn-inactive btn-small">inactive</a>
+
+        <h2>Button Groups</h2>
+        <div class="btn-group-vertical">
+            <a class="btn btn-primary">add to cart</a>
+            <a class="btn btn-secondary">frame it</a>
         </div>
-        <div class="row">
-            <div class="three col">Three</div>
-            <div class="three col">Three</div>
-            <div class="three col">Three</div>
-            <div class="three col">Three</div>
+        <div class="btn-group-horizontal">
+            <a class="btn btn-secondary btn-small">mount</a>
+            <a class="btn btn-secondary btn-small">laminate</a>
+            <a class="btn btn-secondary btn-small">canvas</a>
         </div>
-        <div class="row">
-            <div class="four col">Four</div>
-            <div class="four col">Four</div>
-            <div class="four col">Four</div>
-        </div>
-        <div class="row">
-            <div class="six col">Six</div>
-            <div class="six col">Six</div>
-        </div>
-        <div class="row">
-            <div class="twelve col">Twelve</div>
-        </div>
-    </div>
+      </section>
+      <section id="forms">
+      <h2>Forms</h2>
+      <form action="#" method="post">
+          <div>
+              <label for="name">Text Input Label:</label>
+              <input type="text" name="name" id="name" value="" tabindex="1">
+          </div>
+          <div>
+              <p>Radio Button Title</p>
+              <label for="radio-choice-1">Choice 1</label>
+              <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1">
+              <label for="radio-choice-2">Choice 2</label>
+              <input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2">
+          </div>
+          <div>
+              <label for="select-choice">Select Dropdown Label:</label>
+              <select name="select-choice" id="select-choice">
+                  <option value="Choice 1">Choice 1</option>
+                  <option value="Choice 2">Choice 2</option>
+                  <option value="Choice 3">Choice 3</option>
+              </select>
+          </div>
+          <div>
+              <label for="textarea">Textarea:</label>
+              <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+          </div>
+          <div>
+              <label for="checkbox">Checkbox:</label>
+              <input type="checkbox" name="checkbox" id="checkbox">
+          </div>
+          <div>
+              <input type="submit" value="Submit">
+          </div>
+      </form>
+      </section>
+
+      <section id="tables">
+      <h2>Tables</h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Heading 1</th>
+                  <th>Heading 2</th>
+                  <th>Heading 3</th>
+                  <th>Heading 4</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>asdf</td>
+                  <td>fghj</td>
+                  <td>qwer</td>
+                  <td>rtyu</td>
+              </tr>
+          </tbody>
+      </table>
+
+      <h2>Tabs</h2>
+      <div class="tabs-container">
+          <ul class="tabs-menu">
+              <li class="current">
+                  <a href="#tab-1">You'll Like</a>
+              </li>
+              <li>
+                  <a href="#tab-2">Related Categories</a>
+              </li>
+
+          </ul>
+          <div class="content-container">
+              <div id="tab-1" class="tab-content">
+                  <p>Tab 1 Content</p>
+              </div>
+              <div id="tab-2" class="tab-content">
+                  <p>Tab 2 Content</p>
+              </div>
+          </div>
+      </div>
+  </div>
 </body>
 </html>
