@@ -1,5 +1,29 @@
+* {
+  box-sizing: border-box;
+}
 @import "text.scss";
 @import "lists.scss";
 @import "buttons.scss";
 @import "blockquote.scss";
 @import "tabs.scss";
+
+.style-section:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.style-heading {
+  border-bottom: 1px solid #ccc;
+}
+@media screen and (min-width: 768px) {
+  .style-heading {
+    width: 33.3333%;
+    float: left;
+    border-bottom: none;
+    border-right: 1px solid #ccc;
+  }
+  .style-content {
+    width: 66.6666%;
+    float: left;
+  }
+}

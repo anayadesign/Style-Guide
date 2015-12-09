@@ -1,20 +1,23 @@
 @charset "UTF-8";
-body, p {
-  font-family: 'Times New Roman', Times, serif;
+* {
+  box-sizing: border-box; }
+
+html, body, p {
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
-  color: #000; }
+  color: #333; }
 
 h1, h2, h3, h4 {
-  font-family: BebasNeueRegular, 'Bebas Neue Regular', BebasNeue, 'Bebas Neue', Arial, sans-serif;
-  font-weight: normal;
+  font-family: BebasNeueRegular, 'Bebas Neue Regular', BebasNeue, 'Bebas Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
   font-style: normal;
   line-height: 1;
   text-transform: uppercase; }
 
 h1 {
-  margin: 24px 0;
+  margin: 1rem 0;
   font-size: 42px;
   color: #222; }
 
@@ -229,5 +232,24 @@ blockquote cite:before {
 
 #tab-1 {
   display: block; }
+
+.style-section:after {
+  clear: both;
+  content: '';
+  display: table; }
+
+.style-heading {
+  border-bottom: 1px solid #ccc; }
+
+@media screen and (min-width: 768px) {
+  .style-heading {
+    width: 33.3333%;
+    float: left;
+    border-bottom: none;
+    border-right: 1px solid #ccc; }
+
+  .style-content {
+    width: 66.6666%;
+    float: left; } }
 
 /*# sourceMappingURL=styles.css.map */
