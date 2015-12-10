@@ -1,0 +1,54 @@
+.pricing-table {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d6d6d6;
+  border-collapse: collapse;
+  text-align: center;
+  font: normal normal 12px/1.4 Helvetica, Arial, sans-serif;
+  color: #888;
+}
+
+.pricing-table td,
+.pricing-table th {
+  border-left: 1px solid #d6d6d6;
+  border-right: 1px solid #d6d6d6;
+}
+
+.pricing-table td {
+  height: 30px;
+  font-size: 14px;
+}
+
+.pricing-table tr:nth-child(even) {
+  background-color: #FFF;
+}
+
+.pricing-table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.pricing-table td:first-child,
+.pricing-table th:first-child {
+  border-left: none;
+}
+
+.pricing-table td:last-child,
+.pricing-table th:last-child {
+  border-right: none;
+}
+
+.pricing-table th {
+  width: 25%;
+  height: 44px;
+  font: normal bold 24px 'BebasFamily', sans-serif;
+  border-bottom: 1px solid #d6d6d6;
+  background-color: #f2f2f2;
+  padding: 0 10px;
+
+}
+
+.pricing-note {
+  text-align: left;
+  font-size: 12px;
+  font-style: italic;
+}
