@@ -27,19 +27,19 @@
           <p><code>.flood</code> can be added to display the Flood font.</p>
           <p>Paragraph tag <strong>Strong tag. ALL CAPS</strong> senectus et <em>Emphasis, ALL CAPS.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Condimentum sed, <code>CODE TAG</code>, ornare sit amet, wisi. Aenean fermentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Link, ALL CAPS</a> in turpis pulvinar facilisis. Ut felis.</p>
 
-          <h2>Blockquote</h2>
+          <h3>Blockquote</h3>
           <blockquote>
               <p>Blockquote paragraph, this is a blockquote paragraph. Quotes on quotes on quotes.<cite>Author</cite></p>
           </blockquote>
 
-          <h2>Code</h2>
+          <h3>Code</h3>
           <pre>#pre code a {
   display: block;
   width: 300px;
   height: 80px;
 }</pre>
 
-          <h2>Lists</h2>
+          <h3>Lists</h3>
           <ol>Ordered List
               <li>List item 1</li>
               <li>List item 2</li>
@@ -73,104 +73,125 @@
           </ul>
         </div>
       </section>
-      <section id="buttons">
-        <h2>Buttons</h2>
-        <a class="btn btn-primary">primary</a>
-        <a class="btn btn-secondary">secondary</a>
-        <a class="btn btn-inactive">inactive</a>
-        <br>
-        <a class="btn btn-primary btn-small">primary</a>
-        <a class="btn btn-secondary btn-small">secondary</a>
-        <a class="btn btn-inactive btn-small">inactive</a>
 
-        <h2>Button Groups</h2>
-        <div class="btn-group-vertical">
-            <a class="btn btn-primary">add to cart</a>
-            <a class="btn btn-secondary">frame it</a>
+      <section id="buttons" class="style-section">
+        <div class="style-heading">
+          <h2>Buttons</h2>
         </div>
-        <div class="btn-group-horizontal">
-            <a class="btn btn-secondary btn-small">mount</a>
-            <a class="btn btn-secondary btn-small">laminate</a>
-            <a class="btn btn-secondary btn-small">canvas</a>
+        <div class="style-content">
+          <a class="btn btn-primary">primary</a>
+          <a class="btn btn-secondary">secondary</a>
+          <a class="btn btn-inactive">inactive</a>
+          <br>
+          <a class="btn btn-primary btn-small">primary</a>
+          <a class="btn btn-secondary btn-small">secondary</a>
+          <a class="btn btn-inactive btn-small">inactive</a>
+
+          <h2>Button Groups</h2>
+          <div class="btn-group-vertical">
+              <a class="btn btn-primary">add to cart</a>
+              <a class="btn btn-secondary">frame it</a>
+          </div>
+          <div class="btn-group-horizontal">
+              <a class="btn btn-secondary btn-small">mount</a>
+              <a class="btn btn-secondary btn-small">laminate</a>
+              <a class="btn btn-secondary btn-small">canvas</a>
+          </div>
         </div>
       </section>
-      <section id="forms">
-      <h2>Forms</h2>
-      <form action="#" method="post">
-          <div>
+
+      <section id="forms" class="style-section">
+        <div class="style-heading">
+          <h2>Forms</h2>
+        </div>
+        <div class="style-content">
+          <form action="#" method="post">
+            <div>
               <label for="name">Text Input Label:</label>
               <input type="text" name="name" id="name" value="" tabindex="1">
-          </div>
-          <div>
+            </div>
+            <div>
               <p>Radio Button Title</p>
               <label for="radio-choice-1">Choice 1</label>
               <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1">
               <label for="radio-choice-2">Choice 2</label>
               <input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2">
-          </div>
-          <div>
+            </div>
+            <div>
               <label for="select-choice">Select Dropdown Label:</label>
               <select name="select-choice" id="select-choice">
-                  <option value="Choice 1">Choice 1</option>
-                  <option value="Choice 2">Choice 2</option>
-                  <option value="Choice 3">Choice 3</option>
+                <option value="Choice 1">Choice 1</option>
+                <option value="Choice 2">Choice 2</option>
+                <option value="Choice 3">Choice 3</option>
               </select>
-          </div>
-          <div>
+            </div>
+            <div>
               <label for="textarea">Textarea:</label>
               <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
-          </div>
-          <div>
+            </div>
+            <div>
               <label for="checkbox">Checkbox:</label>
               <input type="checkbox" name="checkbox" id="checkbox">
-          </div>
-          <div>
+            </div>
+            <div>
               <input type="submit" value="Submit">
-          </div>
-      </form>
+            </div>
+          </form>
+        </div>
       </section>
 
-      <section id="tables">
-      <h2>Tables</h2>
-      <table>
-          <thead>
-              <tr>
-                  <th>Heading 1</th>
-                  <th>Heading 2</th>
-                  <th>Heading 3</th>
-                  <th>Heading 4</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>asdf</td>
-                  <td>fghj</td>
-                  <td>qwer</td>
-                  <td>rtyu</td>
-              </tr>
-          </tbody>
-      </table>
+      <section id="tables" class="style-section">
+        <div class="style-heading">
+          <h2>Tables</h2>
+        </div>
+        <div class="style-content">
+          <table>
+              <thead>
+                  <tr>
+                      <th>Heading 1</th>
+                      <th>Heading 2</th>
+                      <th>Heading 3</th>
+                      <th>Heading 4</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>asdf</td>
+                      <td>fghj</td>
+                      <td>qwer</td>
+                      <td>rtyu</td>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+      </section>
 
-      <h2>Tabs</h2>
-      <div class="tabs-container">
-          <ul class="tabs-menu">
-              <li class="current">
-                  <a href="#tab-1">You'll Like</a>
-              </li>
-              <li>
-                  <a href="#tab-2">Related Categories</a>
-              </li>
+      <section id="tabs" class="style-section">
+        <div class="style-heading">
+          <h2>Tabs</h2>
+        </div>
+        <div class="style-content">
+          <div class="tabs-container">
+              <ul class="tabs-menu">
+                  <li class="current">
+                      <a href="#tab-1">You'll Like</a>
+                  </li>
+                  <li>
+                      <a href="#tab-2">Related Categories</a>
+                  </li>
 
-          </ul>
-          <div class="content-container">
-              <div id="tab-1" class="tab-content">
-                  <p>Tab 1 Content</p>
-              </div>
-              <div id="tab-2" class="tab-content">
-                  <p>Tab 2 Content</p>
+              </ul>
+              <div class="content-container">
+                  <div id="tab-1" class="tab-content">
+                      <p>Tab 1 Content</p>
+                  </div>
+                  <div id="tab-2" class="tab-content">
+                      <p>Tab 2 Content</p>
+                  </div>
               </div>
           </div>
-      </div>
+        </div>
+      </section>
   </div>
 </body>
 </html>
