@@ -1,4 +1,4 @@
-Art.com Framework
+Art.com Style Guide
 =========
 
-A CSS Framework containing the Art.com styles
+A CSS library containing the Art.com styles
