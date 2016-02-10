@@ -1,31 +1,52 @@
-* {
-  box-sizing: border-box;
+@font-face {
+    font-family: 'BebasFamily';
+    src: url('../fonts/BebasNeue-Bold.eot');
+    src: local('?'),
+         url('../fonts/BebasNeue-Bold.woff') format('woff'),
+         url('../fonts/BebasNeue-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
-@import "text.scss";
-@import "lists.scss";
-@import "buttons.scss";
-@import "blockquote.scss";
-@import "tables.scss";
-@import "tabs.scss";
-
-.style-section:after {
-  clear: both;
-  content: '';
-  display: table;
+@font-face {
+    font-family: 'BebasFamily';
+    src: url('../fonts/BebasNeue-Regular.eot');
+    src: local('?'),
+         url('../fonts/BebasNeue-Regular.woff') format('woff'),
+         url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
-.style-content {
-  border-top: 1px solid #ccc;
+@font-face {
+    font-family: 'BebasFamily';
+    src: url('../fonts/BebasNeue-Book.eot');
+    src: local('?'),
+         url('../fonts/BebasNeue-Book.woff') format('woff'),
+         url('../fonts/BebasNeue-Book.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
-@media screen and (min-width: 768px) {
-  .style-heading {
-    width: 25%;
-    float: left;
-
-  }
-  .style-content {
-    width: 75%;
-    float: left;
-    border-top: none;
-    border-left: 1px solid #ccc;
-  }
+@font-face {
+    font-family: 'BebasFamily';
+    src: url('../fonts/BebasNeue-Light.eot');
+    src: local('?'),
+         url('../fonts/BebasNeue-Light.woff') format('woff'),
+         url('../fonts/BebasNeue-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
 }
+@font-face {
+    font-family: 'BebasFamily';
+    src: url('../fonts/BebasNeue-Thin.eot');
+    src: local('?'),
+         url('../fonts/BebasNeue-Thin.woff') format('woff'),
+         url('../fonts/BebasNeue-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@import "text";
+@import "lists";
+@import "buttons";
+@import "blockquote";
+@import "tables";
+@import "tabs";
+@import "layout";
