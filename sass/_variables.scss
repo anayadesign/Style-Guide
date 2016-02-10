@@ -1,0 +1,29 @@
+//text
+$font-stack-brand: 'Bebas Family', BebasNeueRegular, 'Bebas Neue', BebasNeue, Helvetica, Arial, sans-serif;
+$font-stack-text: Helvetica, Arial, sans-serif;
+
+//colors
+$color-primary:       #EF9223;
+$color-primary-deep:  #F17622;
+$color-black:            #222;
+$color-darkgray:         #333;
+$color-gray:             #888;
+$color-lightgray:        #CCC;
+$color-offwhite:      #EFEFEF;
+$color-white:            #FFF;
+
+//mixins
+@mixin clearfix {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+@mixin gradient-top-btm($color1, $color2) {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,$color2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, $color1 0%,$color2 100%); /* Chrome10+,Safari5.1+ */
+  background:    -moz-linear-gradient(top, $color1 0%,$color2 100%); /* FF3.6+ */
+  background:     -ms-linear-gradient(top, $color1 0%,$color2 100%); /* IE10+ */
+  background:      -o-linear-gradient(top, $color1 0%,$color2 100%); /* Opera 11.10+ */
+  background:         linear-gradient(to bottom, $color1 0%,$color2 100%); /* W3C */
+}
