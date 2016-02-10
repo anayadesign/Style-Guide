@@ -1,17 +1,17 @@
+@import "variables";
 .pricing-table {
   width: 100%;
-  box-sizing: border-box;
-  border: 1px solid #d6d6d6;
+  border: 1px solid $color-lightgray;
   border-collapse: collapse;
   text-align: center;
-  font: normal normal 12px/1.4 Helvetica, Arial, sans-serif;
-  color: #888;
+  font: normal normal 12px/1.4 $font-stack-text;
+  color: $color-darkgray;
 }
 
 .pricing-table td,
 .pricing-table th {
-  border-left: 1px solid #d6d6d6;
-  border-right: 1px solid #d6d6d6;
+  border-left: 1px solid $color-lightgray;
+  border-right: 1px solid $color-lightgray;
 }
 
 .pricing-table td {
@@ -20,11 +20,11 @@
 }
 
 .pricing-table tr:nth-child(even) {
-  background-color: #FFF;
+  background-color: $color-white;
 }
 
 .pricing-table tr:nth-child(odd) {
-  background-color: #f2f2f2;
+  background-color: $color-offwhite;
 }
 
 .pricing-table td:first-child,
@@ -40,9 +40,9 @@
 .pricing-table th {
   width: 25%;
   height: 44px;
-  font: normal bold 24px 'BebasFamily', sans-serif;
-  border-bottom: 1px solid #d6d6d6;
-  background-color: #f2f2f2;
+  font: normal bold 24px $font-stack-brand;
+  border-bottom: 1px solid $color-lightgray;
+  background-color: $color-offwhite;
   padding: 0 10px;
 
 }

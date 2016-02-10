@@ -1,0 +1,71 @@
+@import "variables";
+html, body, p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    color: $color-darkgray;
+}
+h1, h2, h3, h4 {
+    font-family: $font-stack-brand;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1;
+    text-transform: uppercase;}
+
+.style-guide-header {
+    width: 100%;
+    padding: 24px;
+    background-color: $color-primary;
+    margin-bottom: 1.5em;
+}
+.style-guide-header h1 {
+    font-family: $font-stack-brand;
+    font-weight: 700;
+    line-height: 1;
+    color: $color-white;
+    max-width: 1008px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-size: 42px;
+    color: $color-black;
+}
+    h1.heading-xl{
+        font-size: 60px;
+    }
+h2 {
+    margin: 12px 0 24px;
+    font-size: 36px;
+    color: $color-black;
+}
+h3 {
+    font-size: 24px;
+    color: $color-black;
+}
+h4 {
+    font-size: 18px;
+    color: $color-black;
+}
+h5 {
+  font-family: $font-stack-text;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1;
+}
+h6 {}
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: $color-primary;
+}
+.flood {
+  font-family: Flood, $font-stack-text;
+  font-weight: normal;
+  font-style: normal;
+}
