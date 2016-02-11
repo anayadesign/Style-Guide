@@ -41,3 +41,6 @@ Thumbs.db
 *.scssc
 /.sass-cache/
 /.sass-cache/*
+
+# Ignore css map #
+*.map

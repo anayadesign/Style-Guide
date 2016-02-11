@@ -37,7 +37,7 @@ html, body, p {
   color: #333; }
 
 h1, h2, h3, h4 {
-  font-family: "Bebas Family", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   line-height: 1;
@@ -50,7 +50,7 @@ h1, h2, h3, h4 {
   margin-bottom: 1.5em; }
 
 .style-guide-header h1 {
-  font-family: "Bebas Family", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1;
   color: #FFF;
@@ -108,7 +108,7 @@ a:hover {
   font-weight: bold; }
 
 .btn {
-  font: normal 700 24px/1 "Bebas Family", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font: normal 700 24px/1 "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
   margin: 5px;
@@ -191,7 +191,7 @@ a:hover {
 
 blockquote:before {
   content: "\201C";
-  font: normal 700 114px/0 "Bebas Family", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font: normal 700 114px/0 "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   color: #888;
   position: relative;
   top: 90px;
@@ -199,7 +199,7 @@ blockquote:before {
   right: 7px; }
 
 blockquote p {
-  font: normal 700 38px/1 "Bebas Family", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font: normal 700 38px/1 "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   color: #888;
   padding-left: 35px; }
 
@@ -246,7 +246,7 @@ blockquote cite:before {
 .pricing-table th {
   width: 25%;
   height: 44px;
-  font: normal bold 24px "Bebas Family", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font: normal bold 24px "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   border-bottom: 1px solid #CCC;
   background-color: #EFEFEF;
   padding: 0 10px; }
@@ -370,7 +370,7 @@ blockquote cite:before {
     float: left; } }
 section h1:first-child {
   color: #333;
-  font-family: "Bebas Family", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 36px;
   margin: 0;
