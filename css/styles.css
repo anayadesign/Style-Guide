@@ -29,6 +29,51 @@
   src: local("?"), url("../fonts/BebasNeue-Thin.woff") format("woff"), url("../fonts/BebasNeue-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
+/*Page reformatting*/
+#skinny-banner-placeholder {
+  display: none; }
+
+#main {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 0 !important; }
+
+#main * {
+  box-sizing: border-box; }
+
+#main #tpl-column .tpl-cbs.floatLeft {
+  float: none; }
+
+.style-guide-page {
+  max-width: 1008px;
+  width: 100%;
+  margin: 0 auto; }
+
+.style-guide-page:after {
+  content: '';
+  clear: both;
+  display: table; }
+
+.style-guide * + * {
+  margin-top: 1.5em; }
+
+@media screen and (min-width: 768px) {
+  .style-nav {
+    width: 25%;
+    float: left; }
+
+  .style-guide {
+    width: 75%;
+    float: left; } }
+/*End page reformatting*/
+section h1:first-child {
+  color: #333;
+  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin: 0;
+  border-bottom: 1px solid #888; }
+
 html, body, p {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -95,6 +140,10 @@ a:hover {
   font-family: Flood, Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal; }
+
+pre {
+  word-wrap: break-word;
+  white-space: pre-wrap; }
 
 .leftnav {
   padding: 0;
@@ -308,76 +357,5 @@ blockquote cite:before {
 
 #tab-1 {
   display: block; }
-
-/*.style-section:after {
-  clear: both;
-  content: '';
-  display: table;
-}
-.style-content {
-  border-top: 1px solid #ccc;
-}
-@media screen and (min-width: 768px) {
-  .style-heading {
-    width: 25%;
-    float: left;
-
-  }
-  .style-content {
-    width: 75%;
-    float: left;
-    border-top: none;
-    border-left: 1px solid #ccc;
-  }
-}
-*/
-/*Page reformatting*/
-#skinny-banner-placeholder {
-  display: none; }
-
-#main {
-  max-width: 100%;
-  width: 100%;
-  margin-top: 0 !important; }
-
-#main * {
-  box-sizing: border-box; }
-
-#main #tpl-column .tpl-cbs.floatLeft {
-  float: none; }
-
-/*End page reformatting*/
-.style-guide-page {
-  max-width: 1008px;
-  width: 100%;
-  margin: 0 auto; }
-
-.style-guide-page:after {
-  content: '';
-  clear: both;
-  display: table; }
-
-.style-guide * + * {
-  margin-top: 1.5em; }
-
-@media screen and (min-width: 768px) {
-  .style-nav {
-    width: 25%;
-    float: left; }
-
-  .style-guide {
-    width: 75%;
-    float: left; } }
-section h1:first-child {
-  color: #333;
-  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  margin: 0;
-  border-bottom: 1px solid #888; }
-
-pre {
-  word-wrap: break-word;
-  white-space: pre-wrap; }
 
 /*# sourceMappingURL=styles.css.map */
