@@ -60,13 +60,23 @@
 @media screen and (min-width: 768px) {
   .style-nav {
     width: 25%;
-    float: left; }
+    float: left;
+    display: block;
+    height: 100%;
+    min-height: 1px;
+    padding-top: 20px; }
+
+  .style-nav-menu.sticky {
+    position: fixed;
+    top: 20px;
+    z-index: 100;
+    border-top: 0; }
 
   .style-guide {
     width: 75%;
     float: left; } }
 /*End page reformatting*/
-section h1:first-child {
+section > h1:first-child {
   color: #333;
   font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   font-weight: 700;
