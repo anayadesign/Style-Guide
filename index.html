@@ -4,218 +4,466 @@
   <title>Art.com Styles</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link rel="stylesheet" href="css/styles.css">
+  <script>
+  $(document).ready(function() {
+      var stickyNavTop = $('.style-nav-menu').offset().top; //get top coordinate of nav
+
+      var stickyNav = function() {
+          var scrollTop = $(window).scrollTop(); //get top coordinate of scrolling window
+
+          if (scrollTop > stickyNavTop) {
+              $('.style-nav-menu').addClass('sticky');
+          } else {
+              $('.style-nav-menu').removeClass('sticky');
+          }
+      };
+
+      stickyNav();
+
+      $(window).scroll(function() {
+          stickyNav();
+      });
+  });
+
+
+  $('#flood-box').change(function() {
+      if ($(this).is(":checked")) {
+          $('.flood-toggle').addClass("flood");
+      } else {
+          $('.flood-toggle').removeClass("flood");
+      }
+  });
+  </script>
 </head>
 <body>
-  <div class="container">
-    <h1 class="heading-xl">Styleguide</h1>
-      <section id="typography" class="style-section">
-        <div class="style-heading">
-          <h2>Typography</h2>
-        </div>
-        <div class="style-content">
-          <h3>Fonts</h3>
-          <p>Heading: Bebas Neue</p>
-          <p>Secondary heading: Flood</p>
-          <p>Body copy: Helvetica</p>
-          <h3>Headings</h3>
-          <h1 class="flood-toggle heading-xl">Heading Level 1 - XL</h1>
-          <h1 class="flood-toggle">Heading Level 1</h1>
-          <h2 class="flood-toggle">Heading Level 2</h2>
-          <h3 class="flood-toggle">Heading Level 3</h3>
-          <h4 class="flood-toggle">Heading Level 4</h4>
-          <label for="flood-box">Flood-ify:</label>
-          <input type="checkbox" name="flood-box" id="flood-box">
-          <script>
-            $('#flood-box').change(function(){
-              if($(this).is(":checked")) {
-                  $('.flood-toggle').addClass("flood");
-              } else {
-                  $('.flood-toggle').removeClass("flood");
-              }
-            });
-          </script>
-          <p><code>.flood</code> can be added to display the Flood font.</p>
-          <p>Paragraph tag <strong>Strong tag. ALL CAPS</strong> senectus et <em>Emphasis, ALL CAPS.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Condimentum sed, <code>CODE TAG</code>, ornare sit amet, wisi. Aenean fermentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Link, ALL CAPS</a> in turpis pulvinar facilisis. Ut felis.</p>
-
-          <h3>Blockquote</h3>
-          <blockquote>
-              <p>Blockquote paragraph, this is a blockquote paragraph. Quotes on quotes on quotes.<cite>Author</cite></p>
-          </blockquote>
-
-          <h3>Code</h3>
-          <pre>#pre code a {
-  display: block;
-  width: 300px;
-  height: 80px;
-}</pre>
-
-          <h3>Lists</h3>
-          <ol>Ordered List
-              <li>List item 1</li>
-              <li>List item 2</li>
-              <li>Nested list
-                  <ol>
-                      <li>List item 1</li>
-                      <li>List item 2</li>
-                  </ol>
-              </li>
-          </ol>
-          <ul>Unordered List
-              <li>List item 1</li>
-              <li>List item 2</li>
-              <li>Nested list
-                  <ul>
-                      <li>List item 1</li>
-                      <li>List item 2</li>
-                  </ul>
-              </li>
-          </ul>
-          <ul class="leftnav">
-              <li>Left Nav List</li>
-              <li>List item 1</li>
-              <li>List item 2</li>
-              <li>Nested list
-                  <ul>
-                      <li>List item 1</li>
-                      <li>List item 2</li>
-                  </ul>
-              </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="buttons" class="style-section">
-        <div class="style-heading">
-          <h2>Buttons</h2>
-        </div>
-        <div class="style-content">
-          <h3>Individual</h3>
-          <a class="btn btn-primary">primary</a>
-          <a class="btn btn-secondary">secondary</a>
-          <a class="btn btn-inactive">inactive</a>
-          <br>
-          <a class="btn btn-primary btn-small">primary</a>
-          <a class="btn btn-secondary btn-small">secondary</a>
-          <a class="btn btn-inactive btn-small">inactive</a>
-
-          <h3>Button Groups</h3>
-          <div class="btn-group-vertical">
-              <a class="btn btn-primary">add to cart</a>
-              <a class="btn btn-secondary">frame it</a>
-          </div>
-          <div class="btn-group-horizontal">
-              <a class="btn btn-secondary btn-small">mount</a>
-              <a class="btn btn-secondary btn-small">laminate</a>
-              <a class="btn btn-secondary btn-small">canvas</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="forms" class="style-section">
-        <div class="style-heading">
-          <h2>Forms</h2>
-        </div>
-        <div class="style-content">
-          <h3>Standard</h3>
-          <form action="#" method="post">
-            <div>
-              <label for="name">Text Input Label:</label>
-              <input type="text" name="name" id="name" value="" tabindex="1">
-            </div>
-            <div>
-              <p>Radio Button Title</p>
-              <label for="radio-choice-1">Choice 1</label>
-              <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1">
-              <label for="radio-choice-2">Choice 2</label>
-              <input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2">
-            </div>
-            <div>
-              <label for="select-choice">Select Dropdown Label:</label>
-              <select name="select-choice" id="select-choice">
-                <option value="Choice 1">Choice 1</option>
-                <option value="Choice 2">Choice 2</option>
-                <option value="Choice 3">Choice 3</option>
-              </select>
-            </div>
-            <div>
-              <label for="textarea">Textarea:</label>
-              <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
-            </div>
-            <div>
-              <label for="checkbox">Checkbox:</label>
-              <input type="checkbox" name="checkbox" id="checkbox">
-            </div>
-            <div>
-              <input type="submit" value="Submit">
-            </div>
-          </form>
-        </div>
-      </section>
-
-      <section id="tables" class="style-section">
-        <div class="style-heading">
-          <h2>Tables</h2>
-        </div>
-        <div class="style-content">
-          <h3>Pricing table</h3>
-          <table class="pricing-table">
-            <tbody>
-              <tr>
-                <th>Heading 1</th>
-                <th>Heading 2</th>
-                <th>Heading 3</th>
-                <th>Heading 4</th>
-              </tr>
-              <tr>
-                <td>$9.99</td>
-                <td>$9.99</td>
-                <td>$9.99</td>
-                <td>$9.99</td>
-              </tr>
-              <tr>
-                <td>$19.99</td>
-                <td>$19.99</td>
-                <td>$19.99</td>
-                <td>$19.99</td>
-              </tr>
-              <tr>
-                <td>$109.99</td>
-                <td>$109.99</td>
-                <td>$109.99</td>
-                <td>$109.99</td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="pricing-note">*Prices above may have exceptions or exclusions written here.</p>
-        </div>
-      </section>
-
-      <section id="tabs" class="style-section">
-        <div class="style-heading">
-          <h2>Tabs</h2>
-        </div>
-        <div class="style-content">
-          <h3>Standard</h3>
-          <div class="tabs-container">
-            <ul class="tabs-menu">
-              <li class="current">
-                <a href="#tab-1">You'll Like</a>
-              </li>
-              <li>
-                <a href="#tab-2">Related Categories</a>
-              </li>
-            </ul>
-            <div class="content-container">
-              <div id="tab-1" class="tab-content">
-                <p>Tab 1 Content</p>
-              </div>
-              <div id="tab-2" class="tab-content">
-                <p>Tab 2 Content</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<div id="main">
+  <div class="style-guide-header">
+    <h1>Style Guide </h1>
   </div>
+  <div class="style-guide-page">
+    <nav class="style-nav">
+      <ul class="style-nav-menu">
+        <li>Typography</li>
+        <li>Tables</li>
+        <li>Media</li>
+        <li>Forms</li>
+      </ul>
+    </nav>
+    <div class="style-guide">
+      <section>
+        <h1 id="headings">Headings</h1>
+
+        <h1 class="flood-toggle heading-xl">Heading 1 XL</h1>
+        <h1 class="flood-toggle">Heading 1</h1>
+        <h2 class="flood-toggle">Heading 2</h2>
+        <h3 class="flood-toggle">Heading 3</h3>
+        <h4 class="flood-toggle">Heading 4</h4>
+        <h5 class="flood-toggle">Heading 5</h5>
+        <h6 class="flood-toggle">Heading 6</h6>
+
+        <label for="flood-box"><code>.flood</code> headings</label>
+        <input type="checkbox" name="flood-box" id="flood-box">
+        <script>
+          $('#flood-box').change(function(){
+            if($(this).is(":checked")) {
+                $('.flood-toggle').addClass("flood");
+            } else {
+                $('.flood-toggle').removeClass("flood");
+            }
+          });
+        </script>
+      </section>
+      <section>
+        <h1 id="headings-with-text">Headings with Text</h1>
+
+        <h1>Heading 1</h1>
+        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+        <h2>Heading 2</h2>
+        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+        <h3>Heading 3</h3>
+        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+        <h4>Heading 4</h4>
+        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+        <h5>Heading 5</h5>
+        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+        <h6>Heading 6</h6>
+        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+
+      </section>
+      <section>
+        <h1 id="text-block">Block Elements</h1>
+
+        <h2 id="paragraph">Paragraphs and Images</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</p>
+
+        <p><img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/350x150" title="A title element for this placeholder image."></p>
+
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+
+        <h2 id="blockquote">Blockquote</h2>
+
+        <p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        <blockquote>
+          <p>This is a blockquote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.<cite>Author</cite></p>
+        </blockquote>
+        <p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+        <h2 id="figure-caption">Figure-Caption</h2>
+
+        <figure>
+          <img src="http://placehold.it/350x150" alt="A placeholder figure image." />
+          <figcaption>The figcaption element example</figcaption>
+        </figure>
+
+        <h2 id="details-summary">Details-Summary</h2>
+
+        <details>
+          <summary>The summary element example</summary>
+          <p>The details example text. It may be styled differently based on what browser or operating system you are using.</p>
+        </details>
+
+      </section>
+      <section>
+        <h1 id="text-elements"> Text Elements</h1>
+
+        <p>The <a href="#">a element</a> and <a href="http://example.com" target="_blank">external a element</a> examples</p>
+        <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
+        <p>The <acronym title="A Cowboy Ran One New York Marathon">ACRONYM</acronym> element example</p>
+        <p>The <b>b element</b> example</p>
+        <p>The <cite>cite element</cite> example</p>
+        <p>The <code>code element</code> example</p>
+        <p>The <data value="3967381398">data element</data> example</p>
+        <p>The <del>del element</del> example</p>
+        <p>The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p>
+        <p>The <em>em element</em> example</p>
+        <p>The <i>i element</i> example</p>
+        <p>The <ins>ins element</ins> example</p>
+        <p>The <kbd>kbd element</kbd> example</p>
+        <p>The <mark>mark element</mark> example</p>
+        <p>The <q>q element</q> example</p>
+        <p>The <q>q element <q>inside</q> a q element</q> example</p>
+        <p>The <s>s element</s> example</p>
+        <p>The <samp>samp element</samp> example</p>
+        <p>The <small>small element</small> example</p>
+        <p>The <span>span element</span> example</p>
+        <p>The <strong>strong element</strong> example</p>
+        <p>The <sub>sub element</sub> example</p>
+        <p>The <sup>sup element</sup> example</p>
+        <p>The <time datetime="2005-05-15 19:00">time element</time> example</p>
+        <p>The <u>u element</u> example</p>
+        <p>The <var>var element</var> example</p>
+
+      </section>
+      <section>
+        <h1 id="buttons">Buttons</h1>
+        <h3>Individual</h3>
+        <a class="btn btn-primary">primary</a>
+        <a class="btn btn-secondary">secondary</a>
+        <a class="btn btn-inactive">inactive</a>
+        <br>
+        <a class="btn btn-primary btn-small">primary</a>
+        <a class="btn btn-secondary btn-small">secondary</a>
+        <a class="btn btn-inactive btn-small">inactive</a>
+
+        <h3>Button Groups</h3>
+        <div class="btn-group-vertical">
+            <a class="btn btn-primary">add to cart</a>
+            <a class="btn btn-secondary">frame it</a>
+        </div>
+        <div class="btn-group-horizontal">
+            <a class="btn btn-secondary btn-small">mount</a>
+            <a class="btn btn-secondary btn-small">laminate</a>
+            <a class="btn btn-secondary btn-small">canvas</a>
+        </div>
+      </section>
+      <section>
+        <h1 id="monospace">Monospace / Preformatted</h1>
+        <p>Code block wrapped in "pre" and "code" tags</p>
+        <pre><code>
+        var test = variable;
+        $("#jQuery").html('');
+        </code></pre>
+        <p>Monospace Text wrapped in "pre" tags</p>
+        <pre><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p></pre>
+
+      </section>
+      <section>
+        <h1 id="list-types">List Types</h1>
+
+        <h2 id="ordered-list">Ordered List</h2>
+        <ol>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3
+            <ol>
+              <li>List Item 3.1</li>
+              <li>List Item 3.2
+                <ol>
+                  <li>List Item 3.2.1</li>
+                  <li>List Item 3.2.2</li>
+                </ol>
+              </li>
+              <li>List Item 3.3</li>
+            </ol>
+          </li>
+          <li>List Item 4</li>
+        </ol>
+
+        <h2 id="unordered-list">Unordered List</h2>
+        <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3
+            <ul>
+              <li>List Item 3.1</li>
+              <li>List Item 3.2
+                <ul>
+                  <li>List Item 3.2.1</li>
+                  <li>List Item 3.2.2</li>
+                </ul>
+              </li>
+              <li>List Item 3.3</li>
+            </ul>
+          </li>
+          <li>List Item 4</li>
+        </ul>
+
+        <h2 id="definition-list">Definition List</h2>
+        <dl>
+          <dt>Definition Term 1</dt>
+          <dd>Definition Description 1</dd>
+          <dt>Definition Term 2</dt>
+          <dd>Definition Description 2</dd>
+        </dl>
+
+      </section>
+      <section>
+        <h1 id="tables">Tables</h1>
+
+        <table class="pricing-table" cellspacing="0" cellpadding="0">
+          <caption>This is a table caption</caption>
+          <thead>
+            <tr>
+              <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+            </tr>
+            <tr class="even">
+              <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+            </tr>
+            <tr>
+              <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+            </tr>
+            <tr>
+              <td colspan="3">A row with a cell spanning all 3 columns</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Table Footer 1</th><th>Table Footer 2</th><th>Table Footer 3</th>
+            </tr>
+          </tfoot>
+        </table>
+
+      </section>
+      <section>
+        <h1 id="media-elements">Media</h1>
+
+        <h2>The Audio Element:</h2>
+        <audio controls>
+          <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg" />
+          <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <h2>The Video Element:</h2>
+        <video width="320" height="240" controls>
+          <source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
+          <source src="http://www.w3schools.com/tags/movie.ogg" type="video/ogg" />
+          Your browser does not support the video tag.
+        </video>
+
+        <h2>Embedded content:</h2>
+        <p>YouTube video (iframe):</p>
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/l4f9QF0SGuQ" frameborder="0" allowfullscreen></iframe>
+
+      </section>
+      <section>
+        <h1 id="tabs">Tabs</h1>
+        <h3>Standard</h3>
+        <div class="tabs-container">
+          <ul class="tabs-menu">
+            <li class="current">
+              <a href="#tab-1">You'll Like</a>
+            </li>
+            <li>
+              <a href="#tab-2">Related Categories</a>
+            </li>
+          </ul>
+          <div class="content-container">
+            <div id="tab-1" class="tab-content">
+              <p>Tab 1 Content</p>
+            </div>
+            <div id="tab-2" class="tab-content">
+              <p>Tab 2 Content</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1 id="form-elements">Form Elements</h1>
+
+        <p>The Fieldset:</p>
+        <fieldset>
+          <legend>Legend</legend>
+
+          <p>The Form:</p>
+
+          <form>
+            <p><label for="text_field">Text Field:</label><br />
+              <input type="text" id="text_field" />
+            </p>
+
+            <p><label for="text_field_disabled">Disabled Text Field:</label><br />
+              <input type="text" id="text_field_disabled" disabled value="I'm disabled" />
+            </p>
+
+            <p><label for="text_field_readonly">Readonly Text Field:</label><br />
+              <input type="text" id="text_field_readonly" readonly value="I'm readonly" />
+            </p>
+
+            <p><label for="text_area">Text Area:</label><br />
+              <textarea id="text_area"></textarea>
+            </p>
+
+            <p><label for="text_area_disabled">Disabled Text Area:</label><br />
+              <textarea id="text_area_disabled" disabled>I'm disabled</textarea>
+            </p>
+
+            <p><label for="text_area">Readonly Text Area:</label><br />
+              <textarea id="text_area" readonly>I'm readonly</textarea>
+            </p>
+
+            <p><label for="select_element">Select Element:</label><br />
+              <select id="select_element">
+                <optgroup label="Option Group 1">
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                </optgroup>
+                <optgroup label="Option Group 2">
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3" disabled>Disabled Option</option>
+                </optgroup>
+              </select>
+            </p>
+
+            <p><label for="select_element_disabled">Disabled Select Element:</label><br/>
+              <select id="select_element_disabled" disabled>
+                <option value="1">Unselectable Option</option>
+                <option value="2">This option should not even be seen</option>
+              </select>
+            </p>
+
+            <p>Radio Buttons:<br />
+              <label><input type="radio" class="radio" name="radio_button" value="radio_1" /> Radio 1</label><br/>
+              <label><input type="radio" class="radio" name="radio_button" value="radio_2" /> Radio 2</label><br/>
+              <label><input type="radio" class="radio" name="radio_button" value="radio_3" /> Radio 3</label><br/>
+              <label><input type="radio" class="radio" name="radio_button" value="radio_4" disabled /> Radio Disabled</label><br/>
+            </p>
+
+            <p>Checkboxes:<br />
+              <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Checkbox 1</label><br/>
+              <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Checkbox 2</label><br/>
+              <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Checkbox 3</label><br/>
+              <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_4" disabled /> Checkbox Disabled</label><br/>
+            </p>
+
+            <p><label for="password">Password:</label><br />
+              <input type="password" class="password" id="password" />
+            </p>
+
+            <p><label for="file">File Input:</label><br />
+              <input type="file" class="file" id="file" />
+            </p>
+
+            <h3>HTML5-specific Form Elements</h3>
+
+            <p><label for="email">Email:</label><br />
+              <input type="email" id="email" />
+            </p>
+
+            <p><label for="url">URL:</label><br />
+              <input type="url" id="url" />
+            </p>
+
+            <p><label for="tel">Telephone:</label><br />
+              <input type="tel" id="tel" />
+            </p>
+
+            <p><label for="number">Number:</label><br />
+              <input type="number" id="number" min="0" max="10" step="1" value="5" />
+            </p>
+
+            <p><label for="search">Search:</label><br />
+              <input type="search" id="search" />
+            </p>
+
+            <p><label for="date">Date:</label><br />
+              <input type="date" id="date" />
+            </p>
+
+            <p><label for="time">Time:</label><br />
+              <input type="time" id="time" />
+            </p>
+
+            <p><label for="color">Color:</label><br />
+              <input type="color" id="color" />
+            </p>
+
+            <p><label for="datalist">Datalist:</label><br />
+              <input list="browsers" name="browser" type="datalist" id="datalist" />
+              <datalist id="browsers">
+                <option value="Internet Explorer" />
+                <option value="Firefox" />
+                <option value="Chrome" />
+                <option value="Opera" />
+                <option value="Safari" />
+              </datalist>
+            </p>
+
+            <p><label for="range">Range:</label><br />
+              <input type="range" id="range" name="points" min="1" max="10" />
+            </p>
+
+            <p><label for="output">Output:</label><br />
+              <output name="result" id="output">42</output>
+            </p>
+
+            <p><label for="progress">Progress:</label><br />
+              <progress id="progress" value="65" max="100"></progress>
+            </p>
+
+            <p><label for="meter">Meter:</label><br />
+              <meter id="meter" min="200" max="500" value="350">350 degrees</meter>
+            </p>
+
+            <p>
+              <button class="button">Button Element</button>
+              <input class="button" type="reset" value="Clear" />
+              <input class="button" type="submit" value="Submit" />
+            </p>
+          </form>
+
+        </fieldset>
+      </section>
+    </div><!--/.style-guide-->
+  </div><!--/.style-guide-page-->
+</div><!--/#main-->
 </body>
 </html>
