@@ -1,0 +1,54 @@
+@import "variables";
+.color-block {
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+
+.color-block-orange {
+    background-color: #ef9223;
+}
+
+.color-block-deeporange {
+    background-color: #F17622;
+}
+
+.color-block-black {
+    background-color: #222;
+}
+
+.color-block-darkgray {
+    background-color: #333;
+}
+
+.color-block-gray {
+    background-color: #888;
+}
+
+.color-block-lightgray {
+    background-color: #CCC;
+}
+
+.color-block-offwhite {
+    background-color: #EFEFEF;
+}
+
+.color-chart {
+    padding: 0;
+    list-style-type: none;
+    clear: both;
+}
+
+.color-chart li {
+    float: left;
+}
+
+.color-chart:after {
+    clear: both;
+    display: table;
+    content: '';
+}
+
+.color-chart li {
+    margin: 0 1.5em;
+}
