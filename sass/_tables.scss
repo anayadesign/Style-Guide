@@ -19,12 +19,16 @@
   font-size: 14px;
 }
 
-.pricing-table tr:nth-child(even) {
+.pricing-table tr:nth-child(odd) {
   background-color: $color-white;
 }
 
-.pricing-table tr:nth-child(odd) {
+.pricing-table tr:nth-child(even) {
   background-color: $color-offwhite;
+}
+
+.pricing-table tbody tr:last-child td {
+  border-bottom: 1px solid $color-lightgray;
 }
 
 .pricing-table td:first-child,
@@ -38,16 +42,14 @@
 }
 
 .pricing-table th {
-  width: 25%;
-  height: 44px;
   font: normal bold 24px $font-stack-brand;
   border-bottom: 1px solid $color-lightgray;
   background-color: $color-offwhite;
-  padding: 0 10px;
+  padding: .5em;
 
 }
 
-.pricing-note {
+.pricing-table caption {
   text-align: left;
   font-size: 12px;
   font-style: italic;

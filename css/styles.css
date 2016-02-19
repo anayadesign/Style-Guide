@@ -44,6 +44,18 @@
 #main #tpl-column .tpl-cbs.floatLeft {
   float: none; }
 
+.style-guide-header {
+  width: 100%;
+  padding: 24px;
+  background-color: #EF9223;
+  margin-bottom: 1.5em; }
+
+.style-guide-header h1 {
+  color: #FFF;
+  max-width: 1008px;
+  width: 100%;
+  margin: 0 auto; }
+
 .style-guide-page {
   max-width: 1008px;
   width: 100%;
@@ -75,16 +87,16 @@
   .style-guide {
     width: 75%;
     float: left; } }
-/*End page reformatting*/
-section > h1:first-child {
-  color: #333;
-  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  margin: 0;
-  border-bottom: 1px solid #888; }
+.style-guide > section {
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 5px; }
 
-html, body, p {
+.style-guide > section > h2:first-child {
+  margin: 0;
+  border-bottom: 1px solid #222; }
+
+html, body {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -96,49 +108,35 @@ h1, h2, h3, h4 {
   font-weight: bold;
   font-style: normal;
   line-height: 1;
-  text-transform: uppercase; }
-
-.style-guide-header {
-  width: 100%;
-  padding: 24px;
-  background-color: #EF9223;
-  margin-bottom: 1.5em; }
-
-.style-guide-header h1 {
-  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  line-height: 1;
-  color: #FFF;
-  max-width: 1008px;
-  width: 100%;
-  margin: 0 auto; }
+  text-transform: uppercase;
+  color: #222; }
 
 h1 {
-  margin: 1rem 0;
-  font-size: 42px;
-  color: #222; }
+  font-size: 42px; }
 
 h1.heading-xl {
   font-size: 60px; }
 
 h2 {
-  margin: 12px 0 24px;
-  font-size: 36px;
-  color: #222; }
+  font-size: 36px; }
 
 h3 {
-  font-size: 24px;
-  color: #222; }
+  font-size: 24px; }
 
 h4 {
-  font-size: 18px;
-  color: #222; }
+  font-size: 18px; }
 
-h5 {
+h5, h6 {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   line-height: 1; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 12px; }
 
 a {
   color: inherit; }
@@ -288,11 +286,14 @@ blockquote cite:before {
   height: 30px;
   font-size: 14px; }
 
-.pricing-table tr:nth-child(even) {
+.pricing-table tr:nth-child(odd) {
   background-color: #FFF; }
 
-.pricing-table tr:nth-child(odd) {
+.pricing-table tr:nth-child(even) {
   background-color: #EFEFEF; }
+
+.pricing-table tbody tr:last-child td {
+  border-bottom: 1px solid #CCC; }
 
 .pricing-table td:first-child,
 .pricing-table th:first-child {
@@ -303,14 +304,12 @@ blockquote cite:before {
   border-right: none; }
 
 .pricing-table th {
-  width: 25%;
-  height: 44px;
   font: normal bold 24px "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   border-bottom: 1px solid #CCC;
   background-color: #EFEFEF;
-  padding: 0 10px; }
+  padding: .5em; }
 
-.pricing-note {
+.pricing-table caption {
   text-align: left;
   font-size: 12px;
   font-style: italic; }

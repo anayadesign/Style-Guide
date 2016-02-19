@@ -50,8 +50,8 @@
       </ul>
     </nav>
     <div class="style-guide">
-      <section>
-        <h1 id="headings">Headings</h1>
+      <section id="headings">
+        <h2>Headings</h2>
 
         <h1 class="flood-toggle heading-xl">Heading 1 XL</h1>
         <h1 class="flood-toggle">Heading 1</h1>
@@ -73,8 +73,8 @@
           });
         </script>
       </section>
-      <section>
-        <h1 id="headings-with-text">Headings with Text</h1>
+      <section id="headings-with-text">
+        <h2>Headings with Text</h2>
 
         <h1>Heading 1</h1>
         <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
@@ -90,10 +90,8 @@
         <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
 
       </section>
-      <section>
-        <h1 id="text-block">Block Elements</h1>
-
-        <h2 id="paragraph">Paragraphs and Images</h2>
+      <section id="paragraphs">
+        <h2>Paragraphs and Images</h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</p>
@@ -101,23 +99,26 @@
         <p><img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/350x150" title="A title element for this placeholder image."></p>
 
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
-
-        <h2 id="blockquote">Blockquote</h2>
+      </section>
+      <section id="blockquotes">
+        <h2>Blockquote</h2>
 
         <p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
         <blockquote>
           <p>This is a blockquote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.<cite>Author</cite></p>
         </blockquote>
         <p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-
-        <h2 id="figure-caption">Figure-Caption</h2>
+      </section>
+      <section id="figures">
+        <h2>Figure-Caption</h2>
 
         <figure>
           <img src="http://placehold.it/350x150" alt="A placeholder figure image." />
           <figcaption>The figcaption element example</figcaption>
         </figure>
-
-        <h2 id="details-summary">Details-Summary</h2>
+      </section>
+      <section id="details">
+        <h2>Details-Summary</h2>
 
         <details>
           <summary>The summary element example</summary>
@@ -125,8 +126,8 @@
         </details>
 
       </section>
-      <section>
-        <h1 id="text-elements"> Text Elements</h1>
+      <section id="text-elements">
+        <h2>Text Elements</h2>
 
         <p>The <a href="#">a element</a> and <a href="http://example.com" target="_blank">external a element</a> examples</p>
         <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
@@ -156,8 +157,8 @@
         <p>The <var>var element</var> example</p>
 
       </section>
-      <section>
-        <h1 id="buttons">Buttons</h1>
+      <section id="buttons">
+        <h2>Buttons</h2>
         <h3>Individual</h3>
         <a class="btn btn-primary">primary</a>
         <a class="btn btn-secondary">secondary</a>
@@ -178,21 +179,19 @@
             <a class="btn btn-secondary btn-small">canvas</a>
         </div>
       </section>
-      <section>
-        <h1 id="monospace">Monospace / Preformatted</h1>
+      <section id="monospace">
+        <h2>Monospace / Preformatted</h2>
         <p>Code block wrapped in "pre" and "code" tags</p>
-        <pre><code>
-        var test = variable;
-        $("#jQuery").html('');
-        </code></pre>
+        <pre><code>var test = variable;
+$("#jQuery").html('');</code></pre>
         <p>Monospace Text wrapped in "pre" tags</p>
         <pre><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p></pre>
 
       </section>
-      <section>
-        <h1 id="list-types">List Types</h1>
+      <section id="list-types">
+        <h2>List Types</h2>
 
-        <h2 id="ordered-list">Ordered List</h2>
+        <h3 id="ordered-list">Ordered List</h3>
         <ol>
           <li>List Item 1</li>
           <li>List Item 2</li>
@@ -211,7 +210,7 @@
           <li>List Item 4</li>
         </ol>
 
-        <h2 id="unordered-list">Unordered List</h2>
+        <h3 id="unordered-list">Unordered List</h3>
         <ul>
           <li>List Item 1</li>
           <li>List Item 2</li>
@@ -230,7 +229,7 @@
           <li>List Item 4</li>
         </ul>
 
-        <h2 id="definition-list">Definition List</h2>
+        <h3 id="definition-list">Definition List</h3>
         <dl>
           <dt>Definition Term 1</dt>
           <dd>Definition Description 1</dd>
@@ -239,8 +238,8 @@
         </dl>
 
       </section>
-      <section>
-        <h1 id="tables">Tables</h1>
+      <section id="tables">
+        <h2>Tables</h2>
 
         <table class="pricing-table" cellspacing="0" cellpadding="0">
           <caption>This is a table caption</caption>
@@ -271,30 +270,31 @@
         </table>
 
       </section>
-      <section>
-        <h1 id="media-elements">Media</h1>
+      <section id="media-elements">
+        <h2>Media</h2>
 
-        <h2>The Audio Element:</h2>
+        <h3>The Audio Element:</h3>
         <audio controls>
           <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg" />
           <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
 
-        <h2>The Video Element:</h2>
+        <h3>The Video Element:</h3>
         <video width="320" height="240" controls>
           <source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
           <source src="http://www.w3schools.com/tags/movie.ogg" type="video/ogg" />
           Your browser does not support the video tag.
         </video>
 
-        <h2>Embedded content:</h2>
+        <h3>Embedded content:</h3>
         <p>YouTube video (iframe):</p>
         <iframe width="560" height="315" src="http://www.youtube.com/embed/l4f9QF0SGuQ" frameborder="0" allowfullscreen></iframe>
 
       </section>
-      <section>
-        <h1 id="tabs">Tabs</h1>
+      <section id="tabs">
+        <h2>Tabs</h2>
+
         <h3>Standard</h3>
         <div class="tabs-container">
           <ul class="tabs-menu">
@@ -315,8 +315,8 @@
           </div>
         </div>
       </section>
-      <section>
-        <h1 id="form-elements">Form Elements</h1>
+      <section id="form-elements">
+        <h2>Form Elements</h2>
 
         <p>The Fieldset:</p>
         <fieldset>

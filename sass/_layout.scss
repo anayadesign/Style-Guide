@@ -16,6 +16,18 @@
     float: none;
 }
 
+.style-guide-header {
+    width: 100%;
+    padding: 24px;
+    background-color: $color-primary;
+    margin-bottom: 1.5em;
+}
+.style-guide-header h1 {
+    color: $color-white;
+    max-width: 1008px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 .style-guide-page {
     max-width: 1008px;
@@ -48,12 +60,14 @@
         float: left;
     }
 }
-/*End page reformatting*/
-section > h1:first-child {
-    color: $color-darkgray;
-    font-family: $font-stack-brand;
-    font-weight: 700;
-    font-size: 36px;
+
+.style-guide > section {
+    padding: 1em;
+    border: 1px solid $color-lightgray;
+    border-radius: 5px;
+}
+
+.style-guide > section > h2:first-child {
     margin: 0;
-    border-bottom: 1px solid $color-gray;
+    border-bottom: 1px solid $color-black;
 }
