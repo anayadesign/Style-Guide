@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Art.com Styles</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+  $(document).ready(function() {
+      var stickyNavTop = $('.style-nav-menu').offset().top; //get top coordinate of nav
+
+      var stickyNav = function() {
+          var scrollTop = $(window).scrollTop(); //get top coordinate of scrolling window
+
+          if (scrollTop > stickyNavTop) {
+              $('.style-nav-menu').addClass('sticky');
+          } else {
+              $('.style-nav-menu').removeClass('sticky');
+          }
+      };
+
+      stickyNav();
+
+      $(window).scroll(function() {
+          stickyNav();
+      });
+  });
+  </script>
+</head>
+<body>
+<div id="main">
+  <div class="style-guide-header">
+    <h1>Style Guide - Components</h1>
+  </div>
+  <div class="style-guide-page">
+    <nav class="style-nav">
+      <ul class="style-nav-menu">
+        <li>Logos</li>
+        <li>Fonts</li>
+        <li>Colors</li>
+      </ul>
+    </nav>
+    <div class="style-guide">
+      <section>
+        <h2>Components</h2>
+      </section>
+    </div>
+  </div>
+</div>
