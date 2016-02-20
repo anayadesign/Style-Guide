@@ -13,6 +13,8 @@ h1, h2, h3, h4 {
   line-height: 1;
   text-transform: uppercase;
   color: $color-black;
+  margin-top: 1.5em;
+  margin-bottom: .5em;
 }
 
 h1 {
@@ -35,6 +37,9 @@ h5, h6 {
   font-weight: bold;
   font-style: normal;
   line-height: 1;
+  color: $color-black;
+  margin-top: 1.5em;
+  margin-bottom: .5em;
 }
   h5 {
     font-size: 14px;
@@ -42,7 +47,10 @@ h5, h6 {
   h6 {
     font-size: 12px;
   }
-
+.style-guide h5 + p,
+.style-guide h6 + p {
+  margin-top: 1em;
+}
 a {
   color: inherit;
 }
