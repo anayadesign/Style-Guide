@@ -162,19 +162,19 @@ pre {
   word-wrap: break-word;
   white-space: pre-wrap; }
 
-.style-guide ul,
-.style-guide ol {
+.style-guide-page ul,
+.style-guide-page ol {
   padding-left: 2em; }
 
-.style-guide ul {
+.style-guide-page ul {
   list-style-type: disc; }
 
-.style-guide ol {
+.style-guide-page ol {
   list-style-type: decimal; }
 
-.style-guide li,
-.style-guide dl dt,
-.style-guide dl dd {
+.style-guide-page li,
+.style-guide-page dl dt,
+.style-guide-page dl dd {
   margin-top: .5em; }
 
 .leftnav {
