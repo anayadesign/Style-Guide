@@ -1,4 +1,3 @@
-@import "variables";
 .btn {
     font: normal 700 24px/1 $font-stack-brand;
     text-transform: uppercase;
@@ -59,6 +58,7 @@
 
 .btn-group-horizontal {
     font-size:0;
+    text-align: center;
 }
 
 .btn-group-horizontal .btn {

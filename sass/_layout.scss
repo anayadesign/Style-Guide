@@ -1,28 +1,4 @@
-@import "variables";
-/*.style-section:after {
-  clear: both;
-  content: '';
-  display: table;
-}
-.style-content {
-  border-top: 1px solid #ccc;
-}
-@media screen and (min-width: 768px) {
-  .style-heading {
-    width: 25%;
-    float: left;
-
-  }
-  .style-content {
-    width: 75%;
-    float: left;
-    border-top: none;
-    border-left: 1px solid #ccc;
-  }
-}
-*/
 /*Page reformatting*/
-
 #skinny-banner-placeholder {
     display: none;
 }
@@ -37,7 +13,19 @@
 #main #tpl-column .tpl-cbs.floatLeft {
     float: none;
 }
-/*End page reformatting*/
+
+.style-guide-header {
+    width: 100%;
+    padding: 24px;
+    background-color: $color-primary;
+    margin-bottom: 1.5em;
+}
+.style-guide-header h1 {
+    color: $color-white;
+    max-width: 1008px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 .style-guide-page {
     max-width: 1008px;
@@ -47,7 +35,6 @@
 .style-guide-page:after {
     @include clearfix;
 }
-.style-guide {}
 .style-guide * + * {
     margin-top: 1.5em;
 }
@@ -55,22 +42,30 @@
     .style-nav {
         width: 25%;
         float: left;
+        display: block;
+        height: 100%;
+        min-height: 1px;
+        padding-top: 20px;
+    }
+    .style-nav-menu.sticky {
+      position: fixed;
+      top: 20px;
+      z-index: 100;
+      border-top: 0;
     }
     .style-guide {
         width: 75%;
         float: left;
     }
 }
-section {}
-section h1:first-child {
-    color: $color-darkgray;
-    font-family: $font-stack-brand;
-    font-weight: 700;
-    font-size: 36px;
-    margin: 0;
-    border-bottom: 1px solid $color-gray;
+
+.style-guide > section {
+    padding: 1em;
+    border: 1px solid $color-lightgray;
+    border-radius: 5px;
 }
-pre {
-    word-wrap: break-word;
-    white-space: pre-wrap;
+
+.style-guide > section > h2:first-child {
+    margin: 0;
+    border-bottom: 1px solid $color-black;
 }

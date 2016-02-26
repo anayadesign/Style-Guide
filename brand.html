@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Art.com Styles</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+  $(document).ready(function() {
+      var stickyNavTop = $('.style-nav-menu').offset().top; //get top coordinate of nav
+
+      var stickyNav = function() {
+          var scrollTop = $(window).scrollTop(); //get top coordinate of scrolling window
+
+          if (scrollTop > stickyNavTop) {
+              $('.style-nav-menu').addClass('sticky');
+          } else {
+              $('.style-nav-menu').removeClass('sticky');
+          }
+      };
+
+      stickyNav();
+
+      $(window).scroll(function() {
+          stickyNav();
+      });
+  });
+
+
+  $('#flood-box').change(function() {
+      if ($(this).is(":checked")) {
+          $('.flood-toggle').addClass("flood");
+      } else {
+          $('.flood-toggle').removeClass("flood");
+      }
+  });
+  </script>
+</head>
+<body>
+<div id="main">
+  <div class="style-guide-header">
+    <h1>Style Guide - Brand Assets</h1>
+  </div>
+  <div class="style-guide-page">
+    <nav class="style-nav">
+      <ul class="style-nav-menu">
+        <li>Logos</li>
+        <li>Fonts</li>
+        <li>Colors</li>
+      </ul>
+    </nav>
+    <div class="style-guide">
+      <section id="logos">
+        <h2>Logos</h2>
+      </section>
+      <section id="fonts">
+        <h2>Fonts</h2>
+
+        <h3>Bebas Neue<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890 (!@#$%&amp;.,?:;)</h3>
+        <h3 class="flood">Flood<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890 (!@#$%&amp;.,?:;)</h3>
+        <p>Helvetica<br>AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz<br>1234567890 (!@#$%&amp;.,?:;)</p>
+      </section>
+      <section>
+        <h2>Colors</h2>
+        <h3>Primary</h3>
+        <ul class="color-chart">
+          <li>
+            <p class="color-block color-block-orange"></p>
+            <p>Orange</p>
+            <p>#ef9223</p>
+          </li>
+          <li>
+            <p class="color-block color-block-deeporange"></p>
+            <p>Deep Orange</p>
+            <p>#f17622</p>
+          </li>
+        </ul>
+        <h3>Grayscale</h3>
+        <ul class="color-chart">
+          <li>
+            <p class="color-block color-block-black"></p>
+            <p>Black</p>
+            <p>#222</p>
+          </li>
+          <li>
+            <p class="color-block color-block-darkgray"></p>
+            <p>Dark Gray</p>
+            <p>#333</p>
+          </li>
+          <li>
+            <p class="color-block color-block-gray"></p>
+            <p>Gray</p>
+            <p>#888</p>
+          </li>
+          <li>
+            <p class="color-block color-block-lightgray"></p>
+            <p>Light Gray</p>
+            <p>#ccc</p>
+          </li>
+          <li>
+            <p class="color-block color-block-offwhite"></p>
+            <p>Off-white</p>
+            <p>#efefef</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
+</body>
+</html>

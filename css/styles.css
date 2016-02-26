@@ -29,19 +29,20 @@
   src: local("?"), url("../fonts/BebasNeue-Thin.woff") format("woff"), url("../fonts/BebasNeue-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
-html, body, p {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 14px;
-  color: #333; }
+/*Page reformatting*/
+#skinny-banner-placeholder {
+  display: none; }
 
-h1, h2, h3, h4 {
-  font-family: "Bebas Family", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  line-height: 1;
-  text-transform: uppercase; }
+#main {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 0 !important; }
+
+#main * {
+  box-sizing: border-box; }
+
+#main #tpl-column .tpl-cbs.floatLeft {
+  float: none; }
 
 .style-guide-header {
   width: 100%;
@@ -50,40 +51,101 @@ h1, h2, h3, h4 {
   margin-bottom: 1.5em; }
 
 .style-guide-header h1 {
-  font-family: "Bebas Family", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  line-height: 1;
   color: #FFF;
   max-width: 1008px;
   width: 100%;
   margin: 0 auto; }
 
+.style-guide-page {
+  max-width: 1008px;
+  width: 100%;
+  margin: 0 auto; }
+
+.style-guide-page:after {
+  content: '';
+  clear: both;
+  display: table; }
+
+.style-guide * + * {
+  margin-top: 1.5em; }
+
+@media screen and (min-width: 768px) {
+  .style-nav {
+    width: 25%;
+    float: left;
+    display: block;
+    height: 100%;
+    min-height: 1px;
+    padding-top: 20px; }
+
+  .style-nav-menu.sticky {
+    position: fixed;
+    top: 20px;
+    z-index: 100;
+    border-top: 0; }
+
+  .style-guide {
+    width: 75%;
+    float: left; } }
+.style-guide > section {
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 5px; }
+
+.style-guide > section > h2:first-child {
+  margin: 0;
+  border-bottom: 1px solid #222; }
+
+html, body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  color: #333; }
+
+h1, h2, h3, h4 {
+  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #222;
+  margin-top: 1.5em;
+  margin-bottom: .5em; }
+
 h1 {
-  margin: 1rem 0;
-  font-size: 42px;
-  color: #222; }
+  font-size: 42px; }
 
 h1.heading-xl {
   font-size: 60px; }
 
 h2 {
-  margin: 12px 0 24px;
-  font-size: 36px;
-  color: #222; }
+  font-size: 36px; }
 
 h3 {
-  font-size: 24px;
-  color: #222; }
+  font-size: 24px; }
 
 h4 {
-  font-size: 18px;
-  color: #222; }
+  font-size: 18px; }
 
-h5 {
+h5, h6 {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
-  line-height: 1; }
+  line-height: 1;
+  color: #222;
+  margin-top: 1.5em;
+  margin-bottom: .5em; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 12px; }
+
+.style-guide h5 + p,
+.style-guide h6 + p {
+  margin-top: 1em; }
 
 a {
   color: inherit; }
@@ -95,6 +157,25 @@ a:hover {
   font-family: Flood, Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal; }
+
+pre {
+  word-wrap: break-word;
+  white-space: pre-wrap; }
+
+.style-guide-page ul,
+.style-guide-page ol {
+  padding-left: 2em; }
+
+.style-guide-page ul {
+  list-style-type: disc; }
+
+.style-guide-page ol {
+  list-style-type: decimal; }
+
+.style-guide-page li,
+.style-guide-page dl dt,
+.style-guide-page dl dd {
+  margin-top: .5em; }
 
 .leftnav {
   padding: 0;
@@ -108,7 +189,7 @@ a:hover {
   font-weight: bold; }
 
 .btn {
-  font: normal 700 24px/1 "Bebas Family", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font: normal 700 24px/1 "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
   margin: 5px;
@@ -184,14 +265,15 @@ a:hover {
   margin: 0 0 8px; }
 
 .btn-group-horizontal {
-  font-size: 0; }
+  font-size: 0;
+  text-align: center; }
 
 .btn-group-horizontal .btn {
   margin: 0; }
 
 blockquote:before {
   content: "\201C";
-  font: normal 700 114px/0 "Bebas Family", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font: normal 700 114px/0 "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   color: #888;
   position: relative;
   top: 90px;
@@ -199,7 +281,7 @@ blockquote:before {
   right: 7px; }
 
 blockquote p {
-  font: normal 700 38px/1 "Bebas Family", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font: normal 700 38px/1 "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   color: #888;
   padding-left: 35px; }
 
@@ -229,11 +311,14 @@ blockquote cite:before {
   height: 30px;
   font-size: 14px; }
 
-.pricing-table tr:nth-child(even) {
+.pricing-table tr:nth-child(odd) {
   background-color: #FFF; }
 
-.pricing-table tr:nth-child(odd) {
+.pricing-table tr:nth-child(even) {
   background-color: #EFEFEF; }
+
+.pricing-table tbody tr:last-child td {
+  border-bottom: 1px solid #CCC; }
 
 .pricing-table td:first-child,
 .pricing-table th:first-child {
@@ -244,14 +329,12 @@ blockquote cite:before {
   border-right: none; }
 
 .pricing-table th {
-  width: 25%;
-  height: 44px;
-  font: normal bold 24px "Bebas Family", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font: normal bold 24px "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   border-bottom: 1px solid #CCC;
   background-color: #EFEFEF;
-  padding: 0 10px; }
+  padding: .5em; }
 
-.pricing-note {
+.pricing-table caption {
   text-align: left;
   font-size: 12px;
   font-style: italic; }
@@ -309,75 +392,46 @@ blockquote cite:before {
 #tab-1 {
   display: block; }
 
-/*.style-section:after {
-  clear: both;
-  content: '';
-  display: table;
-}
-.style-content {
-  border-top: 1px solid #ccc;
-}
-@media screen and (min-width: 768px) {
-  .style-heading {
-    width: 25%;
-    float: left;
+.color-block {
+  display: block;
+  height: 100px;
+  width: 100px; }
 
-  }
-  .style-content {
-    width: 75%;
-    float: left;
-    border-top: none;
-    border-left: 1px solid #ccc;
-  }
-}
-*/
-/*Page reformatting*/
-#skinny-banner-placeholder {
-  display: none; }
+.color-block-orange {
+  background-color: #ef9223; }
 
-#main {
-  max-width: 100%;
-  width: 100%;
-  margin-top: 0 !important; }
+.color-block-deeporange {
+  background-color: #F17622; }
 
-#main * {
-  box-sizing: border-box; }
+.color-block-black {
+  background-color: #222; }
 
-#main #tpl-column .tpl-cbs.floatLeft {
-  float: none; }
+.color-block-darkgray {
+  background-color: #333; }
 
-/*End page reformatting*/
-.style-guide-page {
-  max-width: 1008px;
-  width: 100%;
-  margin: 0 auto; }
+.color-block-gray {
+  background-color: #888; }
 
-.style-guide-page:after {
+.color-block-lightgray {
+  background-color: #CCC; }
+
+.color-block-offwhite {
+  background-color: #EFEFEF; }
+
+.style-guide-page .color-chart {
+  padding: 0;
+  list-style-type: none;
+  clear: both; }
+
+.style-guide-page .color-chart li {
+  float: left; }
+
+.style-guide-page .color-chart:after {
   content: '';
   clear: both;
   display: table; }
 
-.style-guide * + * {
-  margin-top: 1.5em; }
-
-@media screen and (min-width: 768px) {
-  .style-nav {
-    width: 25%;
-    float: left; }
-
-  .style-guide {
-    width: 75%;
-    float: left; } }
-section h1:first-child {
-  color: #333;
-  font-family: "Bebas Family", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  margin: 0;
-  border-bottom: 1px solid #888; }
-
-pre {
-  word-wrap: break-word;
-  white-space: pre-wrap; }
+.style-guide-page .color-chart li {
+  margin: 0 1.5em; }
 
 /*# sourceMappingURL=styles.css.map */
