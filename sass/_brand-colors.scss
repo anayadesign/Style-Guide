@@ -5,31 +5,31 @@
 }
 
 .color-block-orange {
-    background-color: #ef9223;
+    background-color: $color-primary;
 }
 
 .color-block-deeporange {
-    background-color: #F17622;
+    background-color: $color-primary-deep;
 }
 
 .color-block-black {
-    background-color: #222;
+    background-color: $color-black;
 }
 
 .color-block-darkgray {
-    background-color: #333;
+    background-color: $color-darkgray;
 }
 
 .color-block-gray {
-    background-color: #888;
+    background-color: $color-gray;
 }
 
 .color-block-lightgray {
-    background-color: #CCC;
+    background-color: $color-lightgray;
 }
 
 .color-block-offwhite {
-    background-color: #EFEFEF;
+    background-color: $color-offwhite;
 }
 
 .style-guide-page .color-chart {
