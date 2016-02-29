@@ -281,7 +281,7 @@ blockquote:before {
   right: 7px; }
 
 blockquote p {
-  font: normal 700 38px/1 "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font: normal 700 2.75em/1 "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   color: #888;
   padding-left: 35px; }
 
