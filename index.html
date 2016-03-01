@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <script>
   $(document).ready(function() {
-      var stickyNavTop = $('.style-nav-menu').offset().top; //get top coordinate of nav
+      var stickyNavTop = $('.style-nav').offset().top; //get top coordinate of nav
 
       var stickyNav = function() {
           var scrollTop = $(window).scrollTop(); //get top coordinate of scrolling window
@@ -36,6 +36,13 @@
   </script>
 </head>
 <body>
+  <svg id="svg-library" style="display: none;">
+    <defs>
+      <g id="icon-logo">
+        <path d="M0,10.5V7.7c0-0.5,0.1-0.8,0.3-1.1c0.2-0.3,0.6-0.4,1.1-0.4c0.5,0,0.9,0.1,1.1,0.4s0.3,0.6,0.3,1v0.7H1.9V7.6 c0-0.2,0-0.3-0.1-0.4C1.7,7.1,1.6,7,1.4,7S1.1,7.1,1.1,7.2C1,7.3,0.9,7.4,0.9,7.6v3c0,0.2,0,0.3,0.1,0.4c0.1,0.1,0.2,0.2,0.4,0.2 s0.3,0,0.4-0.1c0.1-0.1,0.1-0.2,0.1-0.4v-1h0.9v1c0,0.4-0.1,0.8-0.3,1c-0.2,0.3-0.6,0.4-1,0.4s-0.9-0.1-1.1-0.4 C0.1,11.3,0,10.9,0,10.5z M0.1,5.7L1.2,0h1.1l1.1,5.7h-1l-0.2-1h-1L1,5.7H0.1z M1.3,3.9h0.8L1.7,1.6L1.3,3.9z M3.3,10.5V7.7 c0-0.5,0.1-0.8,0.3-1.1c0.2-0.3,0.6-0.4,1.1-0.4s0.9,0.1,1.1,0.4c0.2,0.3,0.3,0.6,0.3,1.1v2.7c0,0.4-0.1,0.8-0.3,1.1 C5.6,11.8,5.3,12,4.8,12c-0.5,0-0.9-0.2-1.1-0.4C3.4,11.3,3.3,10.9,3.3,10.5z M4.7,3.1v2.6H3.8V0h1.4c0.5,0,0.8,0.1,1,0.3 c0.2,0.2,0.3,0.5,0.3,0.9V2c0,0.3-0.1,0.5-0.2,0.7S6,3,5.7,3.1l0.9,2.6h-1L4.7,3.1z M5.2,10.6v-3c0-0.2,0-0.3-0.1-0.4 C5.1,7.1,4.9,7,4.8,7C4.6,7,4.5,7.1,4.4,7.2C4.3,7.3,4.3,7.4,4.3,7.6v3c0,0.2,0,0.3,0.1,0.4c0.1,0.1,0.2,0.2,0.4,0.2 c0.2,0,0.3-0.1,0.4-0.2C5.2,10.9,5.2,10.8,5.2,10.6z M4.7,0.8v1.8h0.3c0.3,0,0.5-0.2,0.5-0.5V1.2c0-0.3-0.1-0.5-0.5-0.5L4.7,0.8 L4.7,0.8z M9.4,8.3L9.4,8.3l-0.7,3.7H8.3L7.6,8.3h0v3.7H6.8V6.3h1.1l0.6,3.2h0l0.6-3.2h1.2v5.7H9.4V8.3z M6.9,0h2.5v0.8H8.6v4.9h-1 V0.8H6.8L6.9,0L6.9,0z M9.4,4.7h0.9v0.9H9.4V4.7z"></path>
+        </g>
+    </defs>
+  </svg>
 <div id="main">
   <div class="style-guide-header">
     <h1>Style Guide </h1>
@@ -43,26 +50,88 @@
   <div class="style-guide-page">
     <nav class="style-nav">
       <ul class="style-nav-menu">
-        <li>Typography
-          <ul>
-            <li>Headings</li>
-            <li>Paragraphs</li>
-            <li>Blockquote</li>
-            <li>Figure</li>
-            <li>Details - summary</li>
-            <li>Text elements</li>
-            <li>Buttons</li>
-            <li>Monospace</li>
-            <li>List types</li>
-          </ul>
-        </li>
-        <li>Tables</li>
-        <li>Media</li>
-        <li>Tabs</li>
-        <li>Forms</li>
+        <li><a href="#logos">Logos</a></li>
+        <li><a href="#fonts">Fonts</a></li>
+        <li><a href="#colors">Colors</a></li>
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#text-elements">Text elements</a></li>
+        <li><a href="#blockquotes">Blockquote</a></li>
+        <li><a href="#figures">Figure</a></li>
+        <li><a href="#monospace">Monospace</a></li>
+        <li><a href="#list-types">List types</a></li>
+        <!--<li><a href="#details">Details - summary</a></li>-->
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#media-elements">Media</a></li>
+        <li><a href="#form-elements">Forms</a></li>
       </ul>
     </nav>
     <div class="style-guide">
+      <section id="logos">
+        <h2>Logos</h2>
+
+        <svg width="100px" height="100px" viewBox="0 0 10.5 12" aria-labelledby="title desc" fill="#222">
+          <title>Art.com Logo</title>
+          <desc>A dark-gray Art.com logo.</desc>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logo"></use>
+        </svg>
+        <svg width="100px" height="100px" viewBox="0 0 10.5 12" aria-labelledby="title desc" fill="#FFF" style="background:#888; padding:10px;">
+          <title>Art.com Logo</title>
+          <desc>A dark-gray Art.com logo.</desc>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logo"></use>
+        </svg>
+      </section>
+      <section id="fonts">
+        <h2>Fonts</h2>
+
+        <h3>Bebas Neue<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890 (!@#$%&amp;.,?:;)</h3>
+        <h3 class="flood">Flood<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890 (!@#$%&amp;.,?:;)</h3>
+        <p>Helvetica<br>AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz<br>1234567890 (!@#$%&amp;.,?:;)</p>
+      </section>
+      <section id="colors">
+        <h2>Colors</h2>
+        <h3>Primary</h3>
+        <ul class="color-chart">
+          <li>
+            <p class="color-block color-block-orange"></p>
+            <p>Orange</p>
+            <p>#ef9223</p>
+          </li>
+          <li>
+            <p class="color-block color-block-deeporange"></p>
+            <p>Deep Orange</p>
+            <p>#f17622</p>
+          </li>
+        </ul>
+        <h3>Grayscale</h3>
+        <ul class="color-chart">
+          <li>
+            <p class="color-block color-block-black"></p>
+            <p>Black</p>
+            <p>#222</p>
+          </li>
+          <li>
+            <p class="color-block color-block-darkgray"></p>
+            <p>Dark Gray</p>
+            <p>#333</p>
+          </li>
+          <li>
+            <p class="color-block color-block-gray"></p>
+            <p>Gray</p>
+            <p>#888</p>
+          </li>
+          <li>
+            <p class="color-block color-block-lightgray"></p>
+            <p>Light Gray</p>
+            <p>#ccc</p>
+          </li>
+          <li>
+            <p class="color-block color-block-offwhite"></p>
+            <p>Off-white</p>
+            <p>#efefef</p>
+          </li>
+        </ul>
+      </section>
       <section id="headings">
         <h2>Headings</h2>
 
@@ -93,45 +162,10 @@
           });
         </script>
       </section>
-      <section id="paragraphs">
-        <h2>Paragraphs and Images</h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</p>
-
-        <p><img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/350x150" title="A title element for this placeholder image."></p>
-
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
-      </section>
-      <section id="blockquotes">
-        <h2>Blockquote</h2>
-
-        <p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        <blockquote>
-          <p>This is a blockquote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.<cite>Author</cite></p>
-        </blockquote>
-        <p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-      </section>
-      <section id="figures">
-        <h2>Figure-Caption</h2>
-
-        <figure>
-          <img src="http://placehold.it/350x150" alt="A placeholder figure image." />
-          <figcaption>The figcaption element example</figcaption>
-        </figure>
-      </section>
-      <section id="details">
-        <h2>Details-Summary</h2>
-
-        <details>
-          <summary>The summary element example</summary>
-          <p>The details example text. It may be styled differently based on what browser or operating system you are using.</p>
-        </details>
-
-      </section>
       <section id="text-elements">
         <h2>Text Elements</h2>
 
+        <p>The paragraph element.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>The <a href="#">a element</a> and <a href="http://example.com" target="_blank">external a element</a> examples</p>
         <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
         <p>The <acronym title="A Cowboy Ran One New York Marathon">ACRONYM</acronym> element example</p>
@@ -160,37 +194,44 @@
         <p>The <var>var element</var> example</p>
 
       </section>
-      <section id="buttons">
-        <h2>Buttons</h2>
-        <h3>Individual</h3>
-        <a class="btn btn-primary">primary</a>
-        <a class="btn btn-secondary">secondary</a>
-        <a class="btn btn-inactive">inactive</a>
-        <br>
-        <a class="btn btn-primary btn-small">primary</a>
-        <a class="btn btn-secondary btn-small">secondary</a>
-        <a class="btn btn-inactive btn-small">inactive</a>
+      <section id="blockquotes">
+        <h2>Blockquote</h2>
 
-        <h3>Button Groups</h3>
-        <div class="btn-group-vertical">
-            <a class="btn btn-primary">add to cart</a>
-            <a class="btn btn-secondary">frame it</a>
-        </div>
-        <div class="btn-group-horizontal">
-            <a class="btn btn-secondary btn-small">mount</a>
-            <a class="btn btn-secondary btn-small">laminate</a>
-            <a class="btn btn-secondary btn-small">canvas</a>
-        </div>
+        <p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        <blockquote>
+          <p>This is a blockquote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.<cite>Author</cite></p>
+        </blockquote>
+        <p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
       </section>
+      <section id="figures">
+        <h2>Figure-Caption</h2>
+
+        <figure>
+          <img src="http://placehold.it/350x150" alt="A placeholder figure image." />
+          <figcaption>The figcaption element example</figcaption>
+        </figure>
+      </section>
+      <!--
+      <section id="details">
+        <h2>Details-Summary</h2>
+
+        <details>
+          <summary>The summary element example</summary>
+          <p>The details example text. It may be styled differently based on what browser or operating system you are using.</p>
+        </details>
+
+      </section>
+    -->
       <section id="monospace">
         <h2>Monospace / Preformatted</h2>
         <p>Code block wrapped in "pre" and "code" tags</p>
         <pre><code>var test = variable;
-$("#jQuery").html('');</code></pre>
+  $("#jQuery").html('');</code></pre>
         <p>Monospace Text wrapped in "pre" tags</p>
         <pre><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p></pre>
 
       </section>
+
       <section id="list-types">
         <h2>List Types</h2>
 
@@ -241,6 +282,29 @@ $("#jQuery").html('');</code></pre>
         </dl>
 
       </section>
+      <section id="buttons">
+        <h2>Buttons</h2>
+        <h3>Individual</h3>
+        <a class="btn btn-primary">primary</a>
+        <a class="btn btn-secondary">secondary</a>
+        <a class="btn btn-inactive">inactive</a>
+        <br>
+        <a class="btn btn-primary btn-small">primary</a>
+        <a class="btn btn-secondary btn-small">secondary</a>
+        <a class="btn btn-inactive btn-small">inactive</a>
+
+        <h3>Button Groups</h3>
+        <div class="btn-group-vertical">
+            <a class="btn btn-primary">add to cart</a>
+            <a class="btn btn-secondary">frame it</a>
+        </div>
+        <div class="btn-group-horizontal">
+            <a class="btn btn-secondary btn-small">mount</a>
+            <a class="btn btn-secondary btn-small">laminate</a>
+            <a class="btn btn-secondary btn-small">canvas</a>
+        </div>
+      </section>
+
       <section id="tables">
         <h2>Tables</h2>
 
@@ -265,11 +329,13 @@ $("#jQuery").html('');</code></pre>
               <td colspan="3">A row with a cell spanning all 3 columns</td>
             </tr>
           </tbody>
+          <!--
           <tfoot>
             <tr>
               <th>Table Footer 1</th><th>Table Footer 2</th><th>Table Footer 3</th>
             </tr>
           </tfoot>
+        -->
         </table>
 
       </section>
@@ -292,32 +358,10 @@ $("#jQuery").html('');</code></pre>
 
         <h3>Embedded content:</h3>
         <p>YouTube video (iframe):</p>
-        <iframe width="560" height="315" src="http://www.youtube.com/embed/l4f9QF0SGuQ" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AL-ypXvW2kQ?rel=0" frameborder="0" allowfullscreen></iframe>
 
       </section>
-      <section id="tabs">
-        <h2>Tabs</h2>
 
-        <h3>Standard</h3>
-        <div class="tabs-container">
-          <ul class="tabs-menu">
-            <li class="current">
-              <a href="#tab-1">You'll Like</a>
-            </li>
-            <li>
-              <a href="#tab-2">Related Categories</a>
-            </li>
-          </ul>
-          <div class="content-container">
-            <div id="tab-1" class="tab-content">
-              <p>Tab 1 Content</p>
-            </div>
-            <div id="tab-2" class="tab-content">
-              <p>Tab 2 Content</p>
-            </div>
-          </div>
-        </div>
-      </section>
       <section id="form-elements">
         <h2>Form Elements</h2>
 
