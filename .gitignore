@@ -39,10 +39,8 @@ Thumbs.db
 # Directories #
 ######################
 *.scssc
-.sass-cache
-/.sass-cache
-/.sass-cache/
-/.sass-cache/*
+**/.sass-cache
+**/.sass-cache/*
 
 # Ignore css map #
 ######################
