@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Art.com Styles</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+  $(document).ready(function() {
+      var stickyNavTop = $('.style-nav').offset().top; //get top coordinate of nav
+
+      var stickyNav = function() {
+          var scrollTop = $(window).scrollTop(); //get top coordinate of scrolling window
+
+          if (scrollTop > stickyNavTop) {
+              $('.style-nav-menu').addClass('sticky');
+          } else {
+              $('.style-nav-menu').removeClass('sticky');
+          }
+      };
+
+      stickyNav();
+
+      $(window).scroll(function() {
+          stickyNav();
+      });
+  });
+  </script>
+</head>
+<body>
+<div id="main">
+  <div class="style-guide-header">
+    <h1>Style Guide - Components</h1>
+  </div>
+  <div class="style-guide-page">
+    <nav class="style-nav">
+      <ul class="style-nav-menu">
+        <li><a href="#tabs">Tabs</a></li>
+        <li>Gallery page template</li>
+        <li>Gallery page preview</li>
+        <li>Product page item</li>
+        <li>Shopping Cart</li>
+        <li>Header modules</li>
+        <li>Footer modules</li>
+      </ul>
+    </nav>
+    <div class="style-guide">
+      <section>
+        <h2>Components</h2>
+      </section>
+      <section id="tabs">
+        <h2>Tabs</h2>
+
+        <h3>Standard</h3>
+        <div class="tabs-container">
+          <ul class="tabs-menu">
+            <li class="current">
+              <a href="#tab-1">You'll Like</a>
+            </li>
+            <li>
+              <a href="#tab-2">Related Categories</a>
+            </li>
+          </ul>
+          <div class="content-container">
+            <div id="tab-1" class="tab-content">
+              <p>Tab 1 Content</p>
+            </div>
+            <div id="tab-2" class="tab-content">
+              <p>Tab 2 Content</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

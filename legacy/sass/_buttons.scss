@@ -1,0 +1,66 @@
+.btn {
+    font: normal 700 24px/1 $font-stack-brand;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px;
+    padding: 10px 50px;
+    min-width: 134px;
+    display: inline-block;
+}
+.btn:hover {
+    cursor: pointer;
+}
+    .btn-primary {
+        color: $color-white;
+        border: 1px solid $color-primary-deep;
+        background: $color-primary; /* Old browsers */
+        @include gradient-top-btm($color-primary, $color-primary-deep);
+    }
+        .btn-primary:hover {
+            color: $color-primary;
+            border: 1px solid $color-lightgray;
+            background: $color-white; /* Old browsers */
+            @include gradient-top-btm($color-white, $color-offwhite);
+
+        }
+    .btn-secondary {
+        @extend .btn-primary:hover;
+        color: $color-black;
+        }
+        .btn-secondary:hover {
+            color: $color-white;
+            border: 1px solid $color-black;
+            background: $color-black;
+        }
+    .btn-inactive {
+        color: $color-lightgray;
+        border: 1px solid $color-lightgray;
+        background: $color-offwhite;
+    }
+        .btn-inactive:hover {
+            @extend .btn-inactive;
+            cursor: default;
+        }
+    .btn-small {
+        font-size: 14px;
+        padding: 5px 25px;
+        min-width: 74px;
+    }
+
+/* ====================
+       Button Groups
+   ==================== */
+
+.btn-group-vertical .btn {
+    display:block;
+    margin: 0 0 8px;
+}
+
+.btn-group-horizontal {
+    font-size:0;
+    text-align: center;
+}
+
+.btn-group-horizontal .btn {
+    margin: 0;
+}
