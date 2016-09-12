@@ -43,3 +43,14 @@
     font-weight: 100;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Flood';
+    src: url('../fonts/floodstd-webfont.eot');
+    src: local('?'),
+         url('../fonts/floodstd-webfont.woff') format('woff'),
+         url('../fonts/floodstd-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-weight: normal;
+    font-style: normal;
+}
