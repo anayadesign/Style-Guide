@@ -10,7 +10,7 @@ const fileinclude = require('gulp-file-include');
 const rename = require('gulp-rename');
 const path = require("path");
 var paths = {
-  templates: './templates/'
+  templates: './templates/**'
 };
 
 gulp.task('sass', () =>
