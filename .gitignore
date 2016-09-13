@@ -41,6 +41,8 @@ Thumbs.db
 *.scssc
 **/.sass-cache
 **/.sass-cache/*
+node_modules
+jspm_packages
 
 # Ignore css map #
 ######################

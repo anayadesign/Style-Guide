@@ -1,0 +1,25 @@
+{
+  "name": "styleguide",
+  "version": "1.0.0",
+  "description": "Art.com style guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artdotcom/Style-Guide.git"
+  },
+  "author": "David Anaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artdotcom/Style-Guide/issues"
+  },
+  "homepage": "https://github.com/artdotcom/Style-Guide#readme",
+  "devDependencies": {
+    "browser-sync": "^2.15.0",
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.1.0",
+    "gulp-watch": "^4.3.9"
+  }
+}
