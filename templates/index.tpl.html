@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Art.com style guide and component library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+@@include('./_svg.html')
+<div id="main">
+  @@include('./_header.html')
+  <div class="style-guide-page">
+    @@include('./_leftnav.html')
+    <div class="style-guide">
+      @@include('./sections/brand/_welcome.html')
+      @@include('./sections/brand/_logos.html')
+      @@include('./sections/brand/_brandVoice.html')
+    </div><!--/.style-guide-->
+  </div><!--/.style-guide-page-->
+</div><!--/#main-->
+
+<script>
+$(document).ready(function() {
+    var stickyNavTop = $('.style-nav').offset().top; //get top coordinate of nav
+
+    var stickyNav = function() {
+        var scrollTop = $(window).scrollTop(); //get top coordinate of scrolling window
+
+        if (scrollTop > stickyNavTop) {
+            $('.style-nav-menu').addClass('sticky');
+        } else {
+            $('.style-nav-menu').removeClass('sticky');
+        }
+    };
+
+    stickyNav();
+
+    $(window).scroll(function() {
+        stickyNav();
+    });
+});
+
+
+$('#flood-box').change(function() {
+    if ($(this).is(":checked")) {
+        $('.flood-toggle').addClass("flood");
+    } else {
+        $('.flood-toggle').removeClass("flood");
+    }
+});
+</script>
+</body>
+</html>

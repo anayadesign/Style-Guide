@@ -54,14 +54,15 @@
 .style-guide-header {
   width: 100%;
   padding: 24px;
-  background-color: #EF9223;
   margin-bottom: 1.5em; }
 
 .style-guide-header h1 {
-  color: #FFF;
+  color: #888;
   max-width: 1008px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-weight: 200;
+  border-bottom: 1px solid #CCC; }
 
 .style-guide-page {
   max-width: 1008px;
@@ -76,14 +77,38 @@
 .style-guide * + * {
   margin-top: 1.5em; }
 
+.style-nav-menu {
+  list-style-type: none;
+  padding-left: 0; }
+
+.style-nav-menu .style-nav-heading {
+  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 3em;
+  color: #888;
+  text-decoration: none; }
+
+.style-nav-menu ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2.5em;
+  color: #222; }
+
+.style-nav-menu ul a {
+  text-decoration: none; }
+
 @media screen and (min-width: 768px) {
   .style-nav {
-    width: 25%;
-    float: left;
-    display: block;
     height: 100%;
     min-height: 1px;
-    padding-top: 20px; }
+    width: 20%;
+    margin-right: 5%;
+    padding-top: 20px;
+    padding-right: 1em;
+    display: block;
+    float: left;
+    border-right: 1px solid #CCC;
+    text-align: right; }
 
   .style-nav-menu.sticky {
     position: fixed;
@@ -95,16 +120,27 @@
     width: 75%;
     float: left; } }
 .style-guide > section {
-  padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 5px; }
+  padding: 1em; }
 
 .style-guide > section > h2:first-child {
   margin: 0;
-  border-bottom: 1px solid #222; }
+  font-weight: 200;
+  color: #888;
+  border-bottom: 1px solid #CCC; }
+
+.headline {
+  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 7em;
+  line-height: .85;
+  margin-top: 2rem;
+  margin-bottom: 1rem; }
+
+.headline--secondary {
+  font-size: 5em; }
 
 html, body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
@@ -136,7 +172,7 @@ h4 {
   font-size: 18px; }
 
 h5, h6 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   line-height: 1;
@@ -161,7 +197,7 @@ a:hover {
   color: #EF9223; }
 
 .flood {
-  font-family: Flood, Helvetica, Arial, sans-serif;
+  font-family: Flood, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal; }
 
@@ -169,26 +205,26 @@ pre {
   word-wrap: break-word;
   white-space: pre-wrap; }
 
-.style-guide-page ul,
-.style-guide-page ol {
+.style-guide ul,
+.style-guide ol {
   padding-left: 2em; }
 
-.style-guide-page ul {
+.style-guide ul {
   list-style-type: disc; }
 
-.style-guide-page ol {
+.style-guide ol {
   list-style-type: decimal; }
 
-.style-guide-page li,
-.style-guide-page dl dt,
-.style-guide-page dl dd {
+.style-guide li,
+.style-guide dl dt,
+.style-guide dl dd {
   margin-top: .5em; }
 
 .leftnav {
   padding: 0;
   color: #888;
   list-style: none;
-  font: normal normal 11px Helvetica, Arial, sans-serif;
+  font: normal normal 11px HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
 
 .leftnav > li:first-child {
@@ -196,9 +232,10 @@ pre {
   font-weight: bold; }
 
 .btn {
-  font: normal 700 24px/1 "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font: normal 700 24px/1 HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
   margin: 5px;
   padding: 10px 50px;
   min-width: 134px;
@@ -306,7 +343,7 @@ blockquote cite:before {
   border: 1px solid #CCC;
   border-collapse: collapse;
   text-align: center;
-  font: normal normal 12px/1.4 Helvetica, Arial, sans-serif;
+  font: normal normal 12px/1.4 HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333; }
 
 .pricing-table td,
@@ -440,5 +477,3 @@ blockquote cite:before {
 
 .style-guide-page .color-chart li {
   margin: 0 1.5em; }
-
-/*# sourceMappingURL=styles.css.map */
