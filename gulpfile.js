@@ -40,12 +40,18 @@ gulp.task('fileinclude', function() {
     .pipe(notify({ message: 'Includes: included' }));
 
 });
+gulp.task('fileinclude-watch', ['fileinclude'], function(done) {
+  gulp.watch("./templates/**/*.html", ['fileinclude']);
+  browserSync.reload();
+  done();
+});
 
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', ['sass', 'fileinclude'], function() {
   browserSync.init({
       server: {
           baseDir: "./"
       }
   });
   gulp.watch("./sass/**/*.scss", ['sass-watch']);
+  gulp.watch("./templates/**/*.html", ['fileinclude-watch']);
 });
