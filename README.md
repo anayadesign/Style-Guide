@@ -9,3 +9,7 @@ This is a style guide! It's a living, breathing resource that designers and deve
 Well, in all reality, we should be minimizing the visual differences on our site. Think of these assets as building blocks for design. Any deviation from the style-guide should be a last resort, and as we strive for a more cohesive guide, (ultimately an accepted, integrated guide) these deviations will become less and less frequent. On those infrequent occasions, we will add the new elements into the style guide for future use.
 
 ## Getting started
+1. Fork the repo :fork_and_knife:
+2. Clone the repo
+3. Run `npm install` to get your dependencies
+4. Run `gulp serve` to compile Sass and spin up browserSync. This will also watch for Sass changes.
