@@ -77,6 +77,26 @@
 .style-guide * + * {
   margin-top: 1.5em; }
 
+.style-nav-menu {
+  list-style-type: none;
+  padding-left: 0; }
+
+.style-nav-menu .style-nav-heading {
+  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 3em;
+  color: #888;
+  text-decoration: none; }
+
+.style-nav-menu ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2.5em;
+  color: #222; }
+
+.style-nav-menu ul a {
+  text-decoration: none; }
+
 @media screen and (min-width: 768px) {
   .style-nav {
     height: 100%;
@@ -90,10 +110,6 @@
     border-right: 1px solid #CCC;
     text-align: right; }
 
-  .style-guide-page ul.style-nav-menu {
-    list-style-type: none;
-    padding-left: 0; }
-
   .style-nav-menu.sticky {
     position: fixed;
     top: 20px;
@@ -104,13 +120,24 @@
     width: 75%;
     float: left; } }
 .style-guide > section {
-  padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 5px; }
+  padding: 1em; }
 
 .style-guide > section > h2:first-child {
   margin: 0;
-  border-bottom: 1px solid #222; }
+  font-weight: 200;
+  color: #888;
+  border-bottom: 1px solid #CCC; }
+
+.headline {
+  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 7em;
+  line-height: .85;
+  margin-top: 2rem;
+  margin-bottom: 1rem; }
+
+.headline--secondary {
+  font-size: 5em; }
 
 html, body {
   font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -178,19 +205,19 @@ pre {
   word-wrap: break-word;
   white-space: pre-wrap; }
 
-.style-guide-page ul,
-.style-guide-page ol {
+.style-guide ul,
+.style-guide ol {
   padding-left: 2em; }
 
-.style-guide-page ul {
+.style-guide ul {
   list-style-type: disc; }
 
-.style-guide-page ol {
+.style-guide ol {
   list-style-type: decimal; }
 
-.style-guide-page li,
-.style-guide-page dl dt,
-.style-guide-page dl dd {
+.style-guide li,
+.style-guide dl dt,
+.style-guide dl dd {
   margin-top: .5em; }
 
 .leftnav {
@@ -208,6 +235,7 @@ pre {
   font: normal 700 24px/1 HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
   margin: 5px;
   padding: 10px 50px;
   min-width: 134px;

@@ -39,6 +39,26 @@
 .style-guide * + * {
     margin-top: 1.5em;
 }
+.style-nav-menu {
+  list-style-type: none;
+  padding-left: 0;
+}
+.style-nav-menu .style-nav-heading {
+  font-family: $font-stack-brand;
+  font-weight: 200;
+  font-size: 3em;
+  color: $color-gray;
+  text-decoration: none;
+}
+.style-nav-menu ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2.5em;
+  color: $color-black;
+}
+.style-nav-menu ul a {
+  text-decoration: none;
+}
 @media screen and (min-width: 768px) {
     .style-nav {
         height: 100%;
@@ -53,10 +73,6 @@
         text-align: right;
 
     }
-    .style-guide-page ul.style-nav-menu {
-      list-style-type: none;
-      padding-left:0;
-    }
     .style-nav-menu.sticky {
       position: fixed;
       top: 20px;
@@ -70,12 +86,25 @@
 }
 
 .style-guide > section {
-    padding: 1em;
-    border: 1px solid $color-lightgray;
-    border-radius: 5px;
+  padding: 1em;
 }
 
 .style-guide > section > h2:first-child {
-    margin: 0;
-    border-bottom: 1px solid $color-black;
+  margin: 0;
+  font-weight: 200;
+  color: $color-gray;
+  border-bottom: 1px solid $color-lightgray;
+}
+
+.headline {
+  font-family: $font-stack-brand;
+  font-weight: 200;
+  font-size: 7em;
+  line-height: .85;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.headline--secondary {
+  font-size: 5em;
 }
