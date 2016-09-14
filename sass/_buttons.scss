@@ -1,11 +1,14 @@
 .btn {
-    font: normal 700 24px/1 $font-stack-text;
+    font-family: $font-stack-text;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-    margin: 5px;
-    padding: 10px 50px;
-    min-width: 134px;
+    margin: .25em;
+    padding: .75em 2em;
     display: inline-block;
 }
 .btn:hover {
@@ -14,38 +17,39 @@
     .btn-primary {
         color: $color-white;
         border: 1px solid $color-primary-deep;
-        background: $color-primary; /* Old browsers */
-        @include gradient-top-btm($color-primary, $color-primary-deep);
+        background: $color-primary-deep; /* Old browsers */
     }
-        .btn-primary:hover {
-            color: $color-primary;
-            border: 1px solid $color-lightgray;
-            background: $color-white; /* Old browsers */
-            @include gradient-top-btm($color-white, $color-offwhite);
-
+        .btn-primary:hover,
+        .btn-primary.force-hover {
+            color: $color-white;
+            border: 1px solid $color-primary;
+            background: $color-primary; /* Old browsers */
         }
     .btn-secondary {
-        @extend .btn-primary:hover;
-        color: $color-black;
+        color: $color-white;
+        border: 1px solid $color-darkergray;
+        background: $color-darkergray
         }
-        .btn-secondary:hover {
+        .btn-secondary:hover,
+        .btn-secondary.force-hover {
             color: $color-white;
             border: 1px solid $color-black;
             background: $color-black;
         }
     .btn-inactive {
-        color: $color-lightgray;
+        color: $color-white;
         border: 1px solid $color-lightgray;
-        background: $color-offwhite;
+        background: $color-lightgray;
     }
-        .btn-inactive:hover {
+        .btn-inactive:hover,
+        .btn-inactive.force-hover {
             @extend .btn-inactive;
             cursor: default;
         }
     .btn-small {
-        font-size: 14px;
-        padding: 5px 25px;
-        min-width: 74px;
+        font-size: 11px;
+        padding: .5em 2em;
+        line-height: 2;
     }
 
 /* ====================
