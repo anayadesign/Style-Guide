@@ -31,6 +31,10 @@
 .color-block-offwhite {
     background-color: $color-offwhite;
 }
+.color-block-white {
+    background-color: $color-white;
+    border: 1px solid $color-lightgray;
+}
 
 .style-guide-page .color-chart {
     padding: 0;
