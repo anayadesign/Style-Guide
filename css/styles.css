@@ -247,13 +247,16 @@ pre {
   font-weight: bold; }
 
 .btn {
-  font: normal 700 24px/1 HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  margin: 5px;
-  padding: 10px 50px;
-  min-width: 134px;
+  margin: .25em;
+  padding: .75em 2em;
   display: inline-block; }
 
 .btn:hover {
@@ -261,60 +264,42 @@ pre {
 
 .btn-primary {
   color: #FFF;
-  border: 1px solid #F17622;
-  background: #EF9223;
-  /* Old browsers */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EF9223), color-stop(100%, #F17622));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #EF9223 0%, #F17622 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -moz-linear-gradient(top, #EF9223 0%, #F17622 100%);
-  /* FF3.6+ */
-  background: -ms-linear-gradient(top, #EF9223 0%, #F17622 100%);
-  /* IE10+ */
-  background: -o-linear-gradient(top, #EF9223 0%, #F17622 100%);
-  /* Opera 11.10+ */
-  background: linear-gradient(to bottom, #EF9223 0%, #F17622 100%);
-  /* W3C */ }
+  border: 1px solid #E87E17;
+  background: #E87E17;
+  /* Old browsers */ }
 
-.btn-primary:hover, .btn-secondary {
-  color: #EF9223;
-  border: 1px solid #F1F1F1;
-  background: #FFF;
-  /* Old browsers */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFF), color-stop(100%, #F7F7F7));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #FFF 0%, #F7F7F7 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -moz-linear-gradient(top, #FFF 0%, #F7F7F7 100%);
-  /* FF3.6+ */
-  background: -ms-linear-gradient(top, #FFF 0%, #F7F7F7 100%);
-  /* IE10+ */
-  background: -o-linear-gradient(top, #FFF 0%, #F7F7F7 100%);
-  /* Opera 11.10+ */
-  background: linear-gradient(to bottom, #FFF 0%, #F7F7F7 100%);
-  /* W3C */ }
+.btn-primary:hover,
+.btn-primary.force-hover {
+  color: #FFF;
+  border: 1px solid #EF9223;
+  background: #EF9223;
+  /* Old browsers */ }
 
 .btn-secondary {
-  color: #222; }
+  color: #FFF;
+  border: 1px solid #888;
+  background: #888; }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary.force-hover {
   color: #FFF;
   border: 1px solid #222;
   background: #222; }
 
-.btn-inactive, .btn-inactive:hover {
-  color: #F1F1F1;
+.btn-inactive, .btn-inactive:hover,
+.btn-inactive.force-hover {
+  color: #FFF;
   border: 1px solid #F1F1F1;
-  background: #F7F7F7; }
+  background: #F1F1F1; }
 
-.btn-inactive:hover {
+.btn-inactive:hover,
+.btn-inactive.force-hover {
   cursor: default; }
 
 .btn-small {
-  font-size: 14px;
-  padding: 5px 25px;
-  min-width: 74px; }
+  font-size: 11px;
+  padding: .5em 2em;
+  line-height: 2; }
 
 /* ====================
        Button Groups
@@ -460,10 +445,16 @@ blockquote cite:before {
   background-color: #EF9223; }
 
 .color-block-deeporange {
-  background-color: #F17622; }
+  background-color: #E87E17; }
+
+.color-block-blacker {
+  background-color: #000; }
 
 .color-block-black {
   background-color: #222; }
+
+.color-block-darkergray {
+  background-color: #888; }
 
 .color-block-darkgray {
   background-color: #C6C6C6; }
@@ -479,7 +470,7 @@ blockquote cite:before {
 
 .color-block-white {
   background-color: #FFF;
-  border: 1px solid #F1F1F1; }
+  border: 1px solid #D6D6D6; }
 
 .style-guide-page .color-chart {
   padding: 0;
