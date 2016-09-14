@@ -12,10 +12,16 @@
     background-color: $color-primary-deep;
 }
 
+.color-block-blacker {
+    background-color: $color-blacker;
+}
+
 .color-block-black {
     background-color: $color-black;
 }
-
+.color-block-darkergray {
+    background-color: $color-darkergray;
+}
 .color-block-darkgray {
     background-color: $color-darkgray;
 }
@@ -33,7 +39,7 @@
 }
 .color-block-white {
     background-color: $color-white;
-    border: 1px solid $color-lightgray;
+    border: 1px solid $color-gray;
 }
 
 .style-guide-page .color-chart {
