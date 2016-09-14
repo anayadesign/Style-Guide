@@ -36,6 +36,13 @@
   font-weight: 400;
   font-weight: normal;
   font-style: normal; }
+html, body {
+  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  color: #222; }
+
 /*Page reformatting*/
 #skinny-banner-placeholder {
   display: none; }
@@ -62,7 +69,7 @@
   width: 100%;
   margin: 0 auto;
   font-weight: 200;
-  border-bottom: 1px solid #CCC; }
+  border-bottom: 1px solid #C6C6C6; }
 
 .style-guide-page {
   max-width: 1008px;
@@ -107,7 +114,7 @@
     padding-right: 1em;
     display: block;
     float: left;
-    border-right: 1px solid #CCC;
+    border-right: 1px solid #D6D6D6;
     text-align: right; }
 
   .style-nav-menu.sticky {
@@ -126,7 +133,7 @@
   margin: 0;
   font-weight: 200;
   color: #888;
-  border-bottom: 1px solid #CCC; }
+  border-bottom: 1px solid #D6D6D6; }
 
 .headline {
   font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
@@ -139,13 +146,6 @@
 .headline--secondary {
   font-size: 5em; }
 
-html, body {
-  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 14px;
-  color: #333; }
-
 h1, h2, h3, h4 {
   font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -157,16 +157,16 @@ h1, h2, h3, h4 {
   margin-bottom: .5em; }
 
 h1 {
-  font-size: 42px; }
-
-h1.heading-xl {
-  font-size: 60px; }
-
-h2 {
   font-size: 36px; }
 
-h3 {
+h1.heading-xl {
+  font-size: 54px; }
+
+h2 {
   font-size: 24px; }
+
+h3 {
+  font-size: 22px; }
 
 h4 {
   font-size: 18px; }
@@ -205,6 +205,21 @@ pre {
   word-wrap: break-word;
   white-space: pre-wrap; }
 
+.bebas-bold {
+  font-weight: bold; }
+
+.bebas-regular {
+  font-weight: normal; }
+
+.bebas-book {
+  font-weight: 300; }
+
+.bebas-light {
+  font-weight: 200; }
+
+.bebas-thin {
+  font-weight: 100; }
+
 .style-guide ul,
 .style-guide ol {
   padding-left: 2em; }
@@ -222,7 +237,7 @@ pre {
 
 .leftnav {
   padding: 0;
-  color: #888;
+  color: #D6D6D6;
   list-style: none;
   font: normal normal 11px HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
@@ -232,13 +247,16 @@ pre {
   font-weight: bold; }
 
 .btn {
-  font: normal 700 24px/1 HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  margin: 5px;
-  padding: 10px 50px;
-  min-width: 134px;
+  margin: .25em;
+  padding: .75em 2em;
   display: inline-block; }
 
 .btn:hover {
@@ -246,60 +264,42 @@ pre {
 
 .btn-primary {
   color: #FFF;
-  border: 1px solid #F17622;
-  background: #EF9223;
-  /* Old browsers */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EF9223), color-stop(100%, #F17622));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #EF9223 0%, #F17622 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -moz-linear-gradient(top, #EF9223 0%, #F17622 100%);
-  /* FF3.6+ */
-  background: -ms-linear-gradient(top, #EF9223 0%, #F17622 100%);
-  /* IE10+ */
-  background: -o-linear-gradient(top, #EF9223 0%, #F17622 100%);
-  /* Opera 11.10+ */
-  background: linear-gradient(to bottom, #EF9223 0%, #F17622 100%);
-  /* W3C */ }
+  border: 1px solid #E87E17;
+  background: #E87E17;
+  /* Old browsers */ }
 
-.btn-primary:hover, .btn-secondary {
-  color: #EF9223;
-  border: 1px solid #CCC;
-  background: #FFF;
-  /* Old browsers */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFF), color-stop(100%, #EFEFEF));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #FFF 0%, #EFEFEF 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -moz-linear-gradient(top, #FFF 0%, #EFEFEF 100%);
-  /* FF3.6+ */
-  background: -ms-linear-gradient(top, #FFF 0%, #EFEFEF 100%);
-  /* IE10+ */
-  background: -o-linear-gradient(top, #FFF 0%, #EFEFEF 100%);
-  /* Opera 11.10+ */
-  background: linear-gradient(to bottom, #FFF 0%, #EFEFEF 100%);
-  /* W3C */ }
+.btn-primary:hover,
+.btn-primary.force-hover {
+  color: #FFF;
+  border: 1px solid #EF9223;
+  background: #EF9223;
+  /* Old browsers */ }
 
 .btn-secondary {
-  color: #222; }
+  color: #FFF;
+  border: 1px solid #888;
+  background: #888; }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary.force-hover {
   color: #FFF;
   border: 1px solid #222;
   background: #222; }
 
-.btn-inactive, .btn-inactive:hover {
-  color: #CCC;
-  border: 1px solid #CCC;
-  background: #EFEFEF; }
+.btn-inactive, .btn-inactive:hover,
+.btn-inactive.force-hover {
+  color: #FFF;
+  border: 1px solid #F1F1F1;
+  background: #F1F1F1; }
 
-.btn-inactive:hover {
+.btn-inactive:hover,
+.btn-inactive.force-hover {
   cursor: default; }
 
 .btn-small {
-  font-size: 14px;
-  padding: 5px 25px;
-  min-width: 74px; }
+  font-size: 11px;
+  padding: .5em 2em;
+  line-height: 2; }
 
 /* ====================
        Button Groups
@@ -318,7 +318,7 @@ pre {
 blockquote:before {
   content: "\201C";
   font: normal 700 114px/0 "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
-  color: #888;
+  color: #D6D6D6;
   position: relative;
   top: 90px;
   display: inherit;
@@ -326,30 +326,30 @@ blockquote:before {
 
 blockquote p {
   font: normal 700 2.75em/1 "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
-  color: #888;
+  color: #D6D6D6;
   padding-left: 35px; }
 
 blockquote cite {
   display: block;
   text-align: right;
   font-style: normal;
-  color: #888; }
+  color: #D6D6D6; }
 
 blockquote cite:before {
   content: "– "; }
 
 .pricing-table {
   width: 100%;
-  border: 1px solid #CCC;
+  border: 1px solid #F1F1F1;
   border-collapse: collapse;
   text-align: center;
   font: normal normal 12px/1.4 HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333; }
+  color: #C6C6C6; }
 
 .pricing-table td,
 .pricing-table th {
-  border-left: 1px solid #CCC;
-  border-right: 1px solid #CCC; }
+  border-left: 1px solid #F1F1F1;
+  border-right: 1px solid #F1F1F1; }
 
 .pricing-table td {
   height: 30px;
@@ -359,10 +359,10 @@ blockquote cite:before {
   background-color: #FFF; }
 
 .pricing-table tr:nth-child(even) {
-  background-color: #EFEFEF; }
+  background-color: #F7F7F7; }
 
 .pricing-table tbody tr:last-child td {
-  border-bottom: 1px solid #CCC; }
+  border-bottom: 1px solid #F1F1F1; }
 
 .pricing-table td:first-child,
 .pricing-table th:first-child {
@@ -374,8 +374,8 @@ blockquote cite:before {
 
 .pricing-table th {
   font: normal bold 24px "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
-  border-bottom: 1px solid #CCC;
-  background-color: #EFEFEF;
+  border-bottom: 1px solid #F1F1F1;
+  background-color: #F7F7F7;
   padding: .5em; }
 
 .pricing-table caption {
@@ -392,8 +392,8 @@ blockquote cite:before {
   line-height: 30px;
   display: inline-block;
   margin-right: 10px;
-  background-color: #CCC;
-  border: 1px solid #CCC;
+  background-color: #F1F1F1;
+  border: 1px solid #F1F1F1;
   border-bottom: none; }
 
 .tabs-menu li:hover {
@@ -404,10 +404,10 @@ blockquote cite:before {
 .tabs-menu li.current {
   position: relative;
   background-color: #FFF;
-  border-top: 1px solid #CCC;
-  border-right: 1px solid #CCC;
+  border-top: 1px solid #F1F1F1;
+  border-right: 1px solid #F1F1F1;
   border-bottom: 1px solid #FFF;
-  border-left: 1px solid #CCC;
+  border-left: 1px solid #F1F1F1;
   z-index: 5; }
 
 .tabs-menu li a {
@@ -424,7 +424,7 @@ blockquote cite:before {
   color: #222; }
 
 .content-container {
-  border: 1px solid #CCC;
+  border: 1px solid #F1F1F1;
   background-color: #FFF;
   margin-bottom: 20px;
   width: auto; }
@@ -445,22 +445,32 @@ blockquote cite:before {
   background-color: #EF9223; }
 
 .color-block-deeporange {
-  background-color: #F17622; }
+  background-color: #E87E17; }
+
+.color-block-blacker {
+  background-color: #000; }
 
 .color-block-black {
   background-color: #222; }
 
-.color-block-darkgray {
-  background-color: #333; }
-
-.color-block-gray {
+.color-block-darkergray {
   background-color: #888; }
 
+.color-block-darkgray {
+  background-color: #C6C6C6; }
+
+.color-block-gray {
+  background-color: #D6D6D6; }
+
 .color-block-lightgray {
-  background-color: #CCC; }
+  background-color: #F1F1F1; }
 
 .color-block-offwhite {
-  background-color: #EFEFEF; }
+  background-color: #F7F7F7; }
+
+.color-block-white {
+  background-color: #FFF;
+  border: 1px solid #D6D6D6; }
 
 .style-guide-page .color-chart {
   padding: 0;

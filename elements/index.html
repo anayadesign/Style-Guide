@@ -37,15 +37,15 @@
     <nav class="style-nav">
   <ul class="style-nav-menu">
     <li>
-      <a href="/" class="style-nav-heading">Brand</a>
+      <a href="/Style-Guide" class="style-nav-heading">Brand</a>
       <ul>
-        <li><a href="#welcome">Welcome</a></li>
-        <li><a href="#wordmark">Wordmark</a></li>
-        <li><a href="#brand-voice">Brand Voice</a></li>
+        <li><a href="/Style-Guide/#welcome">Welcome</a></li>
+        <li><a href="/Style-Guide/#wordmark">Wordmark</a></li>
+        <li><a href="/Style-Guide/#brand-voice">Brand Voice</a></li>
       </ul>
     </li>
     <li>
-      <a href="/elements" class="style-nav-heading">Site elements</a>
+      <a href="/Style-Guide/elements" class="style-nav-heading">Site elements</a>
       <ul>
         <li><a href="#fonts">Fonts</a></li>
         <li><a href="#colors">Colors</a></li>
@@ -57,7 +57,6 @@
         <li><a href="#list-types">List types</a></li>
         <li><a href="#buttons">Buttons</a></li>
         <li><a href="#tables">Tables</a></li>
-        <li><a href="#media-elements">Media</a></li>
         <li><a href="#form-elements">Forms</a></li>
       </ul>
     </li>
@@ -71,90 +70,132 @@
       <section id="fonts">
   <h2>Fonts</h2>
 
-  <h3>Bebas Neue<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890 (!@#$%&amp;.,?:;)</h3>
+  <h3 class="bebas-bold">Bebas Neue Bold<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890!@#$%^&amp;*()_+</h3>
+  <h3 class="bebas-regular">Bebas Neue Regular<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890!@#$%^&amp;*()_+</h3>
+  <h3 class="bebas-book">Bebas Neue Book<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890!@#$%^&amp;*()_+</h3>
+  <h3 class="bebas-light">Bebas Neue Light<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890!@#$%^&amp;*()_+</h3>
+  <h3 class="bebas-thin">Bebas Neue Thin<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890!@#$%^&amp;*()_+</h3>
+
   <pre><code>$font-stack-brand: 'BebasFamily', BebasNeueRegular, 'Bebas Neue', BebasNeue, Helvetica, Arial, sans-serif;</code></pre>
 
-  <h3 class="flood">Flood<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890 (!@#$%&amp;.,?:;)</h3>
-  <pre><code>$font-stack-flood: Flood, HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;</code></pre>
-
-  <p>Helvetica<br>AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz<br>1234567890 (!@#$%&amp;.,?:;)</p>
+  <p><strong>HELVETICA NEUE BOLD<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890 !@#$%^&amp;*()_+</strong></p>
+  <p>HELVETICA NEUE REGULAR<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890 !@#$%^&amp;*()_+</p>
   <pre><code>$font-stack-text: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;</code></pre>
+</section>
+
+      <section id="text-styles">
+  <h2>Page text styles</h2>
+
+  <h1 class=" heading-xl">H1 XL: Bebas Neue, 54px, #222, Uppercase, Bold</h1>
+  <h1>H1: Bebas Neue, 36px, #222, Uppercase, Bold</h1>
+  <h2>H2: Bebas Neue, 24px, #222, Uppercase, Bold</h2>
+  <h3>H3: Bebas Neue, 22px, #222, Uppercase, Bold</h3>
+  <h4>H4: Bebas Neue, 18px, #222, Uppercase, Bold</h4>
+  <h5>H5: Helvetica Neue, 14px, #222, Bold</h5>
+  <h6>H6: Helvetica Neue, 12px, #222, Bold</h6>
+
+  <!--paragraph-->
+  <p>Helvetica Neue, 12px, #888888, Regular<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum ornare ligula vitae turpis. Integer tempus libero quis mi. Etiam consequat convallis lorem.</p>
+  <p>Helvetica Neue, 12px, #000000, Regular<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum ornare ligula vitae turpis. Integer tempus libero quis mi. Etiam consequat convallis lorem.</p>
+  <!--normal-->
+  <p>Normal<br>Helvetica Neue, 12px, #888888, Regular, Proper case, Underline</p>
+  <p>On Hover<br>Helvetica Neue, 12px, #EF9223, Regular, Proper case, Underline</p>
+  <!--caps-->
+  <p>Normal<br>Helvetica Neue, 12px, #888888, Regular, Proper case, Underline</p>
+  <p>On Hover<br>Helvetica Neue, 12px, #EF9223, Regular, Proper case, Underline</p>
+</section>
+
+      <section id="text-spacing">
+<h2>Text Spacing</h2>
 </section>
 
       <section id="colors">
   <h2>Colors</h2>
-  <h3>Primary</h3>
   <ul class="color-chart">
     <li>
-      <p class="color-block color-block-orange"></p>
-      <p>Orange</p>
-      <p>#ef9223</p>
+      <span class="color-block color-block-blacker"></span>
+      <p>#000<br>Blacker</p>
+      <p><strong>Primary uses:</strong><br>Header text<br>Body text</p>
     </li>
     <li>
-      <p class="color-block color-block-deeporange"></p>
-      <p>Deep Orange</p>
-      <p>#f17622</p>
-    </li>
-  </ul>
-  <h3>Grayscale</h3>
-  <ul class="color-chart">
-    <li>
-      <p class="color-block color-block-black"></p>
-      <p>Black</p>
-      <p>#222</p>
+      <span class="color-block color-block-black"></span>
+      <p>#222<br>Black</p>
+      <p><strong>Primary uses:</strong><br>Header text<br>Body text</p>
     </li>
     <li>
-      <p class="color-block color-block-darkgray"></p>
-      <p>Dark Gray</p>
-      <p>#333</p>
+      <span class="color-block color-block-darkergray"></span>
+      <p>#888<br>Darker Gray</p>
+      <p><strong>Primary uses:</strong><br>Body text<br>Text links</p>
     </li>
     <li>
-      <p class="color-block color-block-gray"></p>
-      <p>Gray</p>
-      <p>#888</p>
+      <span class="color-block color-block-darkgray"></span>
+      <p>#C6C6C6<br>Dark Gray</p>
+      <p><strong>Primary uses:</strong><br>Borders<br><br></p>
     </li>
     <li>
-      <p class="color-block color-block-lightgray"></p>
-      <p>Light Gray</p>
-      <p>#ccc</p>
+      <span class="color-block color-block-gray"></span>
+      <p>#D6D6D6<br>Gray</p>
+      <p><strong>Primary uses:</strong><br>Borders<br><br></p>
     </li>
     <li>
-      <p class="color-block color-block-offwhite"></p>
-      <p>Off-white</p>
-      <p>#efefef</p>
+      <span class="color-block color-block-lightgray"></span>
+      <p>#F1F1F1<br>Light Gray</p>
+      <p><strong>Primary uses:</strong><br>Light gray fills,<br>Footers,<br>Header bars</p>
+    </li>
+    <li>
+      <span class="color-block color-block-offwhite"></span>
+      <p>#F7F7F7<br>Off-white</p>
+      <p><strong>Primary uses:</strong><br>Light gray fills,<br>Footers,<br>Header bars</p>
+    </li>
+    <li>
+      <span class="color-block color-block-white"></span>
+      <p>#FFF<br>White</p>
+      <p><strong>Primary uses:</strong><br>Background color<br>rollover tab text<br>text over images</p>
+    </li>
+    <li>
+      <span class="color-block color-block-orange"></span>
+      <p>#EF9223<br>Orange</p>
+      <p><strong>Primary uses:</strong><br>Text link<br>Icon hovers</p>
+    </li>
+    <li>
+      <span class="color-block color-block-deeporange"></span>
+      <p>#E87E17<br>Deep Orange</p>
+      <p><strong>Primary uses:</strong><br>Text link<br>Icon hovers</p>
     </li>
   </ul>
 </section>
 
-      <section id="headings">
-  <h2>Headings</h2>
+      <section id="buttons">
+  <h2>Buttons</h2>
+  <p>
+    Default Hover Inactive
+  </p>
+  <a class="btn btn-primary">primary</a>
+  <a class="btn btn-primary force-hover">primary</a>
+  <a class="btn btn-inactive">inactive</a>
+  <br>
+  <a class="btn btn-secondary">secondary</a>
+  <a class="btn btn-secondary force-hover">secondary</a>
+  <a class="btn btn-inactive">inactive</a>
+  <br>
+  <a class="btn btn-primary btn-small">primary</a>
+  <a class="btn btn-primary btn-small force-hover">primary</a>
+  <a class="btn btn-inactive btn-small">inactive</a>
+  <br>
+  <a class="btn btn-secondary btn-small">secondary</a>
+  <a class="btn btn-secondary btn-small force-hover">secondary</a>
+  <a class="btn btn-inactive btn-small">inactive</a>
 
-  <h1 class="flood-toggle heading-xl">Heading 1 XL</h1>
-  <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-  <h1 class="flood-toggle">Heading 1</h1>
-  <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-  <h2 class="flood-toggle">Heading 2</h2>
-  <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-  <h3 class="flood-toggle">Heading 3</h3>
-  <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-  <h4 class="flood-toggle">Heading 4</h4>
-  <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-  <h5 class="flood-toggle">Heading 5</h5>
-  <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-  <h6 class="flood-toggle">Heading 6</h6>
-  <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-
-  <label for="flood-box"><code>.flood</code> headings</label>
-  <input type="checkbox" name="flood-box" id="flood-box">
-  <script>
-    $('#flood-box').change(function(){
-      if($(this).is(":checked")) {
-          $('.flood-toggle').addClass("flood");
-      } else {
-          $('.flood-toggle').removeClass("flood");
-      }
-    });
-  </script>
+  <h3>Button Groups</h3>
+  <div class="btn-group-vertical">
+      <a class="btn btn-primary">add to cart</a>
+      <a class="btn btn-secondary">frame it</a>
+  </div>
+  <div class="btn-group-horizontal">
+      <a class="btn btn-secondary btn-small">mount</a>
+      <a class="btn btn-secondary btn-small">laminate</a>
+      <a class="btn btn-secondary btn-small">canvas</a>
+  </div>
 </section>
 
       <section id="text-elements">
@@ -268,29 +309,6 @@ $("#jQuery").html('');</code></pre>
 
 </section>
 
-      <section id="buttons">
-  <h2>Buttons</h2>
-  <h3>Individual</h3>
-  <a class="btn btn-primary">primary</a>
-  <a class="btn btn-secondary">secondary</a>
-  <a class="btn btn-inactive">inactive</a>
-  <br>
-  <a class="btn btn-primary btn-small">primary</a>
-  <a class="btn btn-secondary btn-small">secondary</a>
-  <a class="btn btn-inactive btn-small">inactive</a>
-
-  <h3>Button Groups</h3>
-  <div class="btn-group-vertical">
-      <a class="btn btn-primary">add to cart</a>
-      <a class="btn btn-secondary">frame it</a>
-  </div>
-  <div class="btn-group-horizontal">
-      <a class="btn btn-secondary btn-small">mount</a>
-      <a class="btn btn-secondary btn-small">laminate</a>
-      <a class="btn btn-secondary btn-small">canvas</a>
-  </div>
-</section>
-
       <section id="tables">
   <h2>Tables</h2>
 
@@ -316,29 +334,6 @@ $("#jQuery").html('');</code></pre>
       </tr>
     </tbody>
   </table>
-</section>
-
-      <section id="media-elements">
-  <h2>Media</h2>
-
-  <h3>The Audio Element:</h3>
-  <audio controls>
-    <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg" />
-    <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
-  </audio>
-
-  <h3>The Video Element:</h3>
-  <video width="320" height="240" controls>
-    <source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
-    <source src="http://www.w3schools.com/tags/movie.ogg" type="video/ogg" />
-    Your browser does not support the video tag.
-  </video>
-
-  <h3>Embedded content:</h3>
-  <p>YouTube video (iframe):</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/AL-ypXvW2kQ?rel=0" frameborder="0" allowfullscreen></iframe>
-
 </section>
 
       <section id="form-elements">
