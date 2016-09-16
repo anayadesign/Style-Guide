@@ -340,16 +340,16 @@ blockquote cite:before {
 
 .pricing-table {
   width: 100%;
-  border: 1px solid #F1F1F1;
+  border: 1px solid #D6D6D6;
   border-collapse: collapse;
   text-align: center;
   font: normal normal 12px/1.4 HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #C6C6C6; }
+  color: #888; }
 
 .pricing-table td,
 .pricing-table th {
-  border-left: 1px solid #F1F1F1;
-  border-right: 1px solid #F1F1F1; }
+  border-left: 1px solid #D6D6D6;
+  border-right: 1px solid #D6D6D6; }
 
 .pricing-table td {
   height: 30px;
@@ -362,7 +362,7 @@ blockquote cite:before {
   background-color: #F7F7F7; }
 
 .pricing-table tbody tr:last-child td {
-  border-bottom: 1px solid #F1F1F1; }
+  border-bottom: 1px solid #D6D6D6; }
 
 .pricing-table td:first-child,
 .pricing-table th:first-child {
@@ -375,7 +375,7 @@ blockquote cite:before {
 .pricing-table th {
   font: normal bold 24px "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   border-bottom: 1px solid #F1F1F1;
-  background-color: #F7F7F7;
+  background-color: #F1F1F1;
   padding: .5em; }
 
 .pricing-table caption {

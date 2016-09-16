@@ -1,16 +1,16 @@
 .pricing-table {
   width: 100%;
-  border: 1px solid $color-lightgray;
+  border: 1px solid $color-gray;
   border-collapse: collapse;
   text-align: center;
   font: normal normal 12px/1.4 $font-stack-text;
-  color: $color-darkgray;
+  color: $color-darkergray;
 }
 
 .pricing-table td,
 .pricing-table th {
-  border-left: 1px solid $color-lightgray;
-  border-right: 1px solid $color-lightgray;
+  border-left: 1px solid $color-gray;
+  border-right: 1px solid $color-gray;
 }
 
 .pricing-table td {
@@ -27,7 +27,7 @@
 }
 
 .pricing-table tbody tr:last-child td {
-  border-bottom: 1px solid $color-lightgray;
+  border-bottom: 1px solid $color-gray;
 }
 
 .pricing-table td:first-child,
@@ -43,7 +43,7 @@
 .pricing-table th {
   font: normal bold 24px $font-stack-brand;
   border-bottom: 1px solid $color-lightgray;
-  background-color: $color-offwhite;
+  background-color: $color-lightgray;
   padding: .5em;
 
 }
