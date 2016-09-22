@@ -7,13 +7,15 @@
   <h3 class="bebas-light">Bebas Neue Light<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890!@#$%^&amp;*()_+</h3>
   <h3 class="bebas-thin">Bebas Neue Thin<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890!@#$%^&amp;*()_+</h3>
 
-  <pre><code class="css">$font-stack-brand: 'BebasFamily', BebasNeueRegular, 'Bebas Neue', BebasNeue, Helvetica, Arial, sans-serif;</code></pre>
+  <pre><code class="css">/* 'BebasFamily' is the current brand font-family, and targets the 5 weights of BebasNeue above. BebasNeueRegular is the deprecated font-family, and targets the equivalent of the Bebas Neue Bold weight above. 'Bebas Neue' and BebasNeue target users' local installs of the BebasNeue Font, should the first two declarations fail.*/
+
+  .target {
+    font-family: 'BebasFamily', BebasNeueRegular, 'Bebas Neue', BebasNeue, Helvetica, Arial, sans-serif;
+  }</code></pre>
 
   <p><strong>HELVETICA NEUE BOLD<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890 !@#$%^&amp;*()_+</strong></p>
   <p>HELVETICA NEUE REGULAR<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890 !@#$%^&amp;*()_+</p>
-  <pre><code class="css">$font-stack-text: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  .testing {
-    background: #ef9223;
-    font-color: green;
+  <pre><code class="css">.target {
+    font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }</code></pre>
 </section>
