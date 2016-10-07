@@ -1,3 +1,12 @@
+html, body, p {
+  font-family: $font-stack-text;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $color-black;
+}
+
 h1, h2, h3, h4 {
   font-family: $font-stack-brand;
   font-weight: bold;
@@ -10,19 +19,24 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 36px;
+  //font-size: 36px;
+  font-size: 2.571em;
 }
-    h1.heading-xl{
-      font-size: 54px;
-    }
+  h1.heading-xl{
+    //font-size: 54px;
+    font-size: 3.857em;
+  }
 h2 {
-  font-size: 24px;
+  //font-size: 24px;
+  font-size: 1.714em;
 }
 h3 {
-  font-size: 22px;
+  //font-size: 22px;
+  font-size: 1.571em;
 }
 h4 {
-  font-size: 18px;
+  //font-size: 18px;
+  font-size: 1.286em;
 }
 h5, h6 {
   font-family: $font-stack-text;
@@ -34,10 +48,12 @@ h5, h6 {
   margin-bottom: .5em;
 }
   h5 {
-    font-size: 14px;
+    //font-size: 14px;
+    font-size: 1em;
   }
   h6 {
-    font-size: 12px;
+    //font-size: 12px;
+    font-size: 0.857em;
   }
 .style-guide h5 + p,
 .style-guide h6 + p {
@@ -59,13 +75,15 @@ pre {
   word-wrap: break-word;
   white-space: pre-wrap;
 }
+.bebas {
+  font-family: $font-stack-brand;
+}
 .bebas-bold {
   font-weight: bold;
 }
 .bebas-regular {
   font-weight: normal;
 }
-
 .bebas-book {
   font-weight: 300;
 }
