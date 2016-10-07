@@ -7,7 +7,12 @@
   <h3 class="bebas-light">Bebas Neue Light<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890!@#$%^&amp;*()_+</h3>
   <h3 class="bebas-thin">Bebas Neue Thin<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890!@#$%^&amp;*()_+</h3>
 
-  <pre><code class="css">/* 'BebasFamily' is the current brand font-family, and targets the 5 weights of BebasNeue above. BebasNeueRegular is the deprecated font-family, and targets the equivalent of the Bebas Neue Bold weight above. 'Bebas Neue' and BebasNeue target users' local installs of the BebasNeue Font, should the first two declarations fail.*/
+  <pre><code class="css">/*
+Current: 'BebasFamily'
+Deprecated: BebasNeueRegular
+
+BebasFamily bold = BebasNeueRegular normal
+*/
 
   .target {
     font-family: 'BebasFamily', BebasNeueRegular, 'Bebas Neue', BebasNeue, Helvetica, Arial, sans-serif;
@@ -15,7 +20,11 @@
 
   <p><strong>HELVETICA NEUE BOLD<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890 !@#$%^&amp;*()_+</strong></p>
   <p>HELVETICA NEUE REGULAR<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890 !@#$%^&amp;*()_+</p>
-  <pre><code class="css">.target {
+  <pre><code class="css">/*
+Helvetica Neue is the preferred text font-family, though we rely on users' local installations. This specification falls back to Helvetica (Mac) or Arial (PC).
+*/
+
+ .target {
     font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }</code></pre>
 </section>

@@ -79,14 +79,25 @@
   <h3 class="bebas-light">Bebas Neue Light<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890!@#$%^&amp;*()_+</h3>
   <h3 class="bebas-thin">Bebas Neue Thin<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>1234567890!@#$%^&amp;*()_+</h3>
 
-  <pre><code class="css">$font-stack-brand: 'BebasFamily', BebasNeueRegular, 'Bebas Neue', BebasNeue, Helvetica, Arial, sans-serif;</code></pre>
+  <pre><code class="css">/*
+Current: 'BebasFamily'
+Deprecated: BebasNeueRegular
+
+BebasFamily bold = BebasNeueRegular normal
+*/
+
+  .target {
+    font-family: 'BebasFamily', BebasNeueRegular, 'Bebas Neue', BebasNeue, Helvetica, Arial, sans-serif;
+  }</code></pre>
 
   <p><strong>HELVETICA NEUE BOLD<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890 !@#$%^&amp;*()_+</strong></p>
   <p>HELVETICA NEUE REGULAR<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890 !@#$%^&amp;*()_+</p>
-  <pre><code class="css">$font-stack-text: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  .testing {
-    background: #ef9223;
-    font-color: green;
+  <pre><code class="css">/*
+Helvetica Neue is the preferred text font-family, though we rely on users' local installations. This specification falls back to Helvetica (Mac) or Arial (PC).
+*/
+
+ .target {
+    font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }</code></pre>
 </section>
 
@@ -100,16 +111,17 @@
   <h4>H4: Bebas Neue, 18px, #222, Uppercase, Bold</h4>
   <h5>H5: Helvetica Neue, 14px, #222, Bold</h5>
   <h6>H6: Helvetica Neue, 12px, #222, Bold</h6>
-
+  <hr>
   <!--paragraph-->
   <p>Helvetica Neue, 12px, #888888, Regular<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum ornare ligula vitae turpis. Integer tempus libero quis mi. Etiam consequat convallis lorem.</p>
   <p>Helvetica Neue, 12px, #000000, Regular<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum ornare ligula vitae turpis. Integer tempus libero quis mi. Etiam consequat convallis lorem.</p>
+  <hr>
   <!--normal-->
-  <p>Normal<br>Helvetica Neue, 12px, #888888, Regular, Proper case, Underline</p>
-  <p>On Hover<br>Helvetica Neue, 12px, #EF9223, Regular, Proper case, Underline</p>
+  <p>Normal<br>Helvetica Neue, 12px, #888888,<br>Regular, Proper case, Underline</p>
+  <p>On Hover<br>Helvetica Neue, 12px, #EF9223,<br>Regular, Proper case, Underline</p>
   <!--caps-->
-  <p>Normal<br>Helvetica Neue, 12px, #888888, Regular, Proper case, Underline</p>
-  <p>On Hover<br>Helvetica Neue, 12px, #EF9223, Regular, Proper case, Underline</p>
+  <p>Normal<br>Helvetica Neue, 12px, #888888,<br>Regular, Proper case, Underline</p>
+  <p>On Hover<br>Helvetica Neue, 12px, #EF9223,<br>Regular, Proper case, Underline</p>
 </section>
 
       <section id="text-spacing">
@@ -156,8 +168,8 @@
       <p><strong>Primary uses:</strong><br>Light gray fills,<br>Footers,<br>Header bars</p>
     </li>
     <li>
-      <span class="color-block color-block-offwhite"></span>
-      <p>#F7F7F7<br>Off-white</p>
+      <span class="color-block color-block-lightergray"></span>
+      <p>#F7F7F7<br>Lighter Gray</p>
       <p><strong>Primary uses:</strong><br>Light gray fills,<br>Footers,<br>Header bars</p>
     </li>
     <li>
@@ -181,7 +193,7 @@
       <section id="buttons">
   <h2>Buttons</h2>
   <p>
-    Default Hover Inactive
+    Regular CTA buttons: Default / Hover / Inactive
   </p>
   <a class="btn btn-primary">primary</a>
   <a class="btn btn-primary force-hover">primary</a>
@@ -190,7 +202,24 @@
   <a class="btn btn-secondary">secondary</a>
   <a class="btn btn-secondary force-hover">secondary</a>
   <a class="btn btn-inactive">inactive</a>
-  <br>
+  <pre><code class="html">&lt;a class="btn btn-primary"&gt;text&lt;/a&gt;
+&lt;a class="btn btn-secondary"&gt;text&lt;/a&gt;
+&lt;a class="btn btn-disabled"&gt;text&lt;/a&gt;</code><code class="css">.btn {
+    font-family: $font-stack-text;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    margin: .25em;
+    padding: .75em 2em;
+    display: inline-block;
+}</code></pre>
+  <p>
+    Small CTA buttons: Default / Hover / Inactive
+  </p>
   <a class="btn btn-primary btn-small">primary</a>
   <a class="btn btn-primary btn-small force-hover">primary</a>
   <a class="btn btn-inactive btn-small">inactive</a>
@@ -208,6 +237,43 @@
       <a class="btn btn-secondary btn-small">mount</a>
       <a class="btn btn-secondary btn-small">laminate</a>
       <a class="btn btn-secondary btn-small">canvas</a>
+  </div>
+</section>
+
+      <section id="menus">
+  <h2>Menus</h2>
+  <select>
+    <option>Sort By:</option>
+    <option>Popularity</option>
+    <option>Price - high</option>
+    <option>Price - low</option>
+    <option>Width - narrow</option>
+    <option>Width - wide</option>
+    <option>Height - short</option>
+    <option>Height - tall</option>
+    <option>Newest</option>
+  </select>
+</section>
+
+      <section id="pagination">
+  <h2>Pagination</h2>
+  <div id="pageNav">
+    <div class="gFltRight">
+      <span class="currentPage">1</span>
+      <a href="/gallery/id--d207233/framed-art-prints_p2.htm">2</a>
+      <a href="/gallery/id--d207233/framed-art-prints_p3.htm">3</a>
+      <a href="/gallery/id--d207233/framed-art-prints_p4.htm">4</a>
+      <a href="/gallery/id--d207233/framed-art-prints_p5.htm">5</a>
+      <a href="/gallery/id--d207233/framed-art-prints_p2.htm" class="PrevNext"><span class="Next"></span></a>
+    </div>
+    <div class="gFltRight view_per_page">
+      View Per Page
+      <ul>
+        <li>16</li>
+        <li id="per_page_selected">32</li>
+        <li>48</li>
+      </ul>
+    </div>
   </div>
 </section>
 
