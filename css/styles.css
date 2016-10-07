@@ -42,12 +42,8 @@
   font-weight: normal;
   font-style: normal; }
 
-html, body {
-  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 14px;
-  color: #222; }
+.gFltRight {
+  float: right; }
 
 /*Page reformatting*/
 #skinny-banner-placeholder {
@@ -151,6 +147,14 @@ html, body {
 .headline--secondary {
   font-size: 5em; }
 
+html, body, p {
+  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #222; }
+
 h1, h2, h3, h4 {
   font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -162,19 +166,19 @@ h1, h2, h3, h4 {
   margin-bottom: .5em; }
 
 h1 {
-  font-size: 36px; }
+  font-size: 2.571em; }
 
 h1.heading-xl {
-  font-size: 54px; }
+  font-size: 3.857em; }
 
 h2 {
-  font-size: 24px; }
+  font-size: 1.714em; }
 
 h3 {
-  font-size: 22px; }
+  font-size: 1.571em; }
 
 h4 {
-  font-size: 18px; }
+  font-size: 1.286em; }
 
 h5, h6 {
   font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -186,10 +190,10 @@ h5, h6 {
   margin-bottom: .5em; }
 
 h5 {
-  font-size: 14px; }
+  font-size: 1em; }
 
 h6 {
-  font-size: 12px; }
+  font-size: 0.857em; }
 
 .style-guide h5 + p,
 .style-guide h6 + p {
@@ -209,6 +213,9 @@ a:hover {
 pre {
   word-wrap: break-word;
   white-space: pre-wrap; }
+
+.bebas {
+  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif; }
 
 .bebas-bold {
   font-weight: bold; }
@@ -319,6 +326,56 @@ pre {
 
 .btn-group-horizontal .btn {
   margin: 0; }
+
+#pageNav {
+  text-align: left;
+  width: 100%;
+  padding-top: 0; }
+
+#pageNav .currentPage {
+  font-weight: bold;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 1px;
+  color: #000; }
+
+#pageNav a {
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 0;
+  text-decoration: none;
+  display: inline-block; }
+
+#pageNav .Next {
+  background: url("http://cache1.artprintimages.com/images/pub/gallerypage/Gallery_ImageSprite_orange_v1.png") no-repeat -49px -26px;
+  width: 18px;
+  height: 18px;
+  vertical-align: bottom;
+  border: 0;
+  display: inline-block; }
+
+#pageNav .view_per_page {
+  font-weight: normal;
+  margin-top: 0;
+  margin-right: 19px; }
+
+#pageNav .view_per_page ul {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+#pageNav .view_per_page ul li {
+  float: left;
+  margin: 0;
+  padding: 1px 4px;
+  cursor: pointer; }
+
+#pageNav .view_per_page ul li:hover {
+  color: #EF9223; }
+
+#pageNav .view_per_page ul li:not(:last-child) {
+  border-right: 1px solid black; }
 
 blockquote:before {
   content: "\201C";
@@ -470,7 +527,7 @@ blockquote cite:before {
 .color-block-lightgray {
   background-color: #F1F1F1; }
 
-.color-block-offwhite {
+.color-block-lightergray {
   background-color: #F7F7F7; }
 
 .color-block-white {
