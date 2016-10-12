@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const gutil = require('gulp-util');
 const notify = require ('gulp-notify');
-const sass = require('gulp-ruby-sass');
+const sass = require('gulp-sass');
 //serve it
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
@@ -13,12 +13,12 @@ var paths = {
   templates: './templates/**'
 };
 
-gulp.task('sass', () =>
-    sass('./sass/**/*.scss')
-        .on('error', sass.logError)
+gulp.task('sass', function () {
+    return gulp.src('./sass/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('css'))
         .pipe(notify({ message: 'Sass: updated <%= file.relative %>' }))
-);
+});
 
 gulp.task('sass-watch', ['sass'], function(done) {
     gulp.watch('./sass/**/*.scss', ['sass']);
@@ -37,7 +37,7 @@ gulp.task('fileinclude', function() {
     }))
     .pipe(gulp.dest('./'))
     .pipe(browserSync.stream())
-    .pipe(notify({ message: 'Includes: included' }));
+    .pipe(notify({ message: 'Includes: included', onLast: true }));
 
 });
 gulp.task('fileinclude-watch', ['fileinclude'], function(done) {
@@ -46,12 +46,10 @@ gulp.task('fileinclude-watch', ['fileinclude'], function(done) {
   done();
 });
 
-gulp.task('serve', ['sass', 'fileinclude'], function() {
+gulp.task('serve', ['sass-watch', 'fileinclude-watch'], function() {
   browserSync.init({
       server: {
           baseDir: "./"
       }
   });
-  gulp.watch("./sass/**/*.scss", ['sass-watch']);
-  gulp.watch("./templates/**/*.html", ['fileinclude-watch']);
 });

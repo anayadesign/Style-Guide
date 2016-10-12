@@ -1,7 +1,7 @@
 <section id="buttons">
   <h2>Buttons</h2>
   <p>
-    Default Hover Inactive
+    Regular CTA buttons: Default / Hover / Inactive
   </p>
   <a class="btn btn-primary">primary</a>
   <a class="btn btn-primary force-hover">primary</a>
@@ -10,7 +10,24 @@
   <a class="btn btn-secondary">secondary</a>
   <a class="btn btn-secondary force-hover">secondary</a>
   <a class="btn btn-inactive">inactive</a>
-  <br>
+  <pre><code class="html">&lt;a class="btn btn-primary"&gt;text&lt;/a&gt;
+&lt;a class="btn btn-secondary"&gt;text&lt;/a&gt;
+&lt;a class="btn btn-disabled"&gt;text&lt;/a&gt;</code><code class="css">.btn {
+    font-family: $font-stack-text;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    margin: .25em;
+    padding: .75em 2em;
+    display: inline-block;
+}</code></pre>
+  <p>
+    Small CTA buttons: Default / Hover / Inactive
+  </p>
   <a class="btn btn-primary btn-small">primary</a>
   <a class="btn btn-primary btn-small force-hover">primary</a>
   <a class="btn btn-inactive btn-small">inactive</a>
