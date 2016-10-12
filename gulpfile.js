@@ -37,7 +37,7 @@ gulp.task('fileinclude', function() {
     }))
     .pipe(gulp.dest('./'))
     .pipe(browserSync.stream())
-    .pipe(notify({ message: 'Includes: included' }));
+    .pipe(notify({ message: 'Includes: included', onLast: true }));
 
 });
 gulp.task('fileinclude-watch', ['fileinclude'], function(done) {
@@ -46,12 +46,10 @@ gulp.task('fileinclude-watch', ['fileinclude'], function(done) {
   done();
 });
 
-gulp.task('serve', ['sass', 'fileinclude'], function() {
+gulp.task('serve', ['sass-watch', 'fileinclude-watch'], function() {
   browserSync.init({
       server: {
           baseDir: "./"
       }
   });
-  gulp.watch("./sass/**/*.scss", ['sass-watch']);
-  gulp.watch("./templates/**/*.html", ['fileinclude-watch']);
 });
