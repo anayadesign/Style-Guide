@@ -1,0 +1,35 @@
+.pricing-table
+  width: 100%
+  border: 1px solid $color-gray
+  border-collapse: collapse
+  text-align: center
+  font: normal normal 12px / 1.4 $font-stack-text
+  color: $color-darkergray
+.pricing-table td,
+.pricing-table th
+  border-left: 1px solid $color-gray
+  border-right: 1px solid $color-gray
+.pricing-table td
+  height: 30px
+  font-size: 14px
+.pricing-table tr:nth-child(odd)
+  background-color: $color-white
+.pricing-table tr:nth-child(even)
+  background-color: $color-lightergray
+.pricing-table tbody tr:last-child td
+  border-bottom: 1px solid $color-gray
+.pricing-table td:first-child,
+.pricing-table th:first-child
+  border-left: none
+.pricing-table td:last-child,
+.pricing-table th:last-child
+  border-right: none
+.pricing-table th
+  font: normal bold 24px $font-stack-brand
+  border-bottom: 1px solid $color-lightgray
+  background-color: $color-lightgray
+  padding: .5em
+.pricing-table caption
+  text-align: left
+  font-size: 12px
+  font-style: italic
