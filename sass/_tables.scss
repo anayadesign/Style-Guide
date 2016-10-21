@@ -1,16 +1,16 @@
 .pricing-table {
   width: 100%;
-  border: 1px solid $color-gray;
+  border: 1px solid $color-lightgray;
   border-collapse: collapse;
   text-align: center;
   font: normal normal 12px/1.4 $font-stack-text;
-  color: $color-darkergray;
+  color: $color-darkgray;
 }
 
 .pricing-table td,
 .pricing-table th {
-  border-left: 1px solid $color-gray;
-  border-right: 1px solid $color-gray;
+  border-left: 1px solid $color-lightgray;
+  border-right: 1px solid $color-lightgray;
 }
 
 .pricing-table td {
@@ -23,11 +23,11 @@
 }
 
 .pricing-table tr:nth-child(even) {
-  background-color: $color-lightergray;
+  background-color: $color-offwhite;
 }
 
 .pricing-table tbody tr:last-child td {
-  border-bottom: 1px solid $color-gray;
+  border-bottom: 1px solid $color-lightgray;
 }
 
 .pricing-table td:first-child,
@@ -43,7 +43,7 @@
 .pricing-table th {
   font: normal bold 24px $font-stack-brand;
   border-bottom: 1px solid $color-lightgray;
-  background-color: $color-lightgray;
+  background-color: $color-offwhite;
   padding: .5em;
 
 }

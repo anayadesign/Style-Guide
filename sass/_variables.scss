@@ -1,18 +1,15 @@
 //text
 $font-stack-brand: 'BebasFamily', BebasNeueRegular, 'Bebas Neue', BebasNeue, Helvetica, Arial, sans-serif;
-$font-stack-text: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-stack-text: Helvetica, Arial, sans-serif;
 
 //colors
 $color-primary:       #EF9223;
-$color-primary-deep:  #E87E17;
-$color-blacker:          #000;
+$color-primary-deep:  #F17622;
 $color-black:            #222;
-$color-darkergray:       #888;
-$color-darkgray:      #C6C6C6;
-$color-gray:          #D6D6D6;
-$color-lightgray:     #F1F1F1;
-$color-lightergray:   #F7F7F7;
-$color-offwhite:      #F7F7F7;
+$color-darkgray:         #333;
+$color-gray:             #888;
+$color-lightgray:        #CCC;
+$color-offwhite:      #EFEFEF;
 $color-white:            #FFF;
 
 //mixins
