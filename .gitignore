@@ -1,8 +1,8 @@
 # Project build #
 ######################
-/css
-/elements
-/index.html
+#/css
+#/elements
+#/index.html
 
 # Compiled source #
 ###################
