@@ -10,18 +10,18 @@ const fileinclude = require('gulp-file-include');
 const rename = require('gulp-rename');
 const path = require("path");
 var paths = {
-  templates: './templates/**'
+  templates: './source/templates/**'
 };
 
 gulp.task('stylus', function () {
-  return gulp.src('./stylus/styles.styl')
+  return gulp.src('./source/stylus/styles.styl')
     .pipe(stylus())
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream())
     .pipe(notify({ message: 'Stylus: updated <%= file.relative %>' }));
 });
 gulp.task('stylus-watch', ['stylus'], function(done) {
-  gulp.watch('./stylus/**/*.styl', ['stylus']);
+  gulp.watch('./source/stylus/**/*.styl', ['stylus']);
   browserSync.reload();
   done();
 });
@@ -41,7 +41,7 @@ gulp.task('fileinclude', function() {
 
 });
 gulp.task('fileinclude-watch', ['fileinclude'], function(done) {
-  gulp.watch("./templates/**/*.html", ['fileinclude']);
+  gulp.watch("./source/templates/**/*.html", ['fileinclude']);
   browserSync.reload();
   done();
 });
