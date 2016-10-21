@@ -5,46 +5,30 @@
   src: local("?"), url("../fonts/BebasNeue-Bold.woff") format("woff"), url("../fonts/BebasNeue-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
-
 @font-face {
   font-family: 'BebasFamily';
   src: url("../fonts/BebasNeue-Regular.eot");
   src: local("?"), url("../fonts/BebasNeue-Regular.woff") format("woff"), url("../fonts/BebasNeue-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
-
 @font-face {
   font-family: 'BebasFamily';
   src: url("../fonts/BebasNeue-Book.eot");
   src: local("?"), url("../fonts/BebasNeue-Book.woff") format("woff"), url("../fonts/BebasNeue-Book.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
-
 @font-face {
   font-family: 'BebasFamily';
   src: url("../fonts/BebasNeue-Light.eot");
   src: local("?"), url("../fonts/BebasNeue-Light.woff") format("woff"), url("../fonts/BebasNeue-Light.ttf") format("truetype");
   font-weight: 200;
   font-style: normal; }
-
 @font-face {
   font-family: 'BebasFamily';
   src: url("../fonts/BebasNeue-Thin.eot");
   src: local("?"), url("../fonts/BebasNeue-Thin.woff") format("woff"), url("../fonts/BebasNeue-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
-
-@font-face {
-  font-family: 'Flood';
-  src: url("../fonts/floodstd-webfont.eot");
-  src: local("?"), url("../fonts/floodstd-webfont.woff") format("woff"), url("../fonts/floodstd-webfont.ttf") format("truetype");
-  font-weight: 400;
-  font-weight: normal;
-  font-style: normal; }
-
-.gFltRight {
-  float: right; }
-
 /*Page reformatting*/
 #skinny-banner-placeholder {
   display: none; }
@@ -63,15 +47,14 @@
 .style-guide-header {
   width: 100%;
   padding: 24px;
+  background-color: #EF9223;
   margin-bottom: 1.5em; }
 
 .style-guide-header h1 {
-  color: #888;
+  color: #FFF;
   max-width: 1008px;
   width: 100%;
-  margin: 0 auto;
-  font-weight: 200;
-  border-bottom: 1px solid #C6C6C6; }
+  margin: 0 auto; }
 
 .style-guide-page {
   max-width: 1008px;
@@ -86,74 +69,39 @@
 .style-guide * + * {
   margin-top: 1.5em; }
 
-.style-nav-menu {
-  list-style-type: none;
-  padding-left: 0; }
-
-.style-nav-menu .style-nav-heading {
-  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 3em;
-  color: #888;
-  text-decoration: none; }
-
-.style-nav-menu ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 2.5em;
-  color: #222; }
-
-.style-nav-menu ul a {
-  text-decoration: none; }
-
 @media screen and (min-width: 768px) {
   .style-nav {
+    width: 25%;
+    float: left;
+    display: block;
     height: 100%;
     min-height: 1px;
-    width: 20%;
-    margin-right: 5%;
-    padding-top: 20px;
-    padding-right: 1em;
-    display: block;
-    float: left;
-    border-right: 1px solid #D6D6D6;
-    text-align: right; }
+    padding-top: 20px; }
+
   .style-nav-menu.sticky {
     position: fixed;
     top: 20px;
     z-index: 100;
     border-top: 0; }
+
   .style-guide {
     width: 75%;
     float: left; } }
-
 .style-guide > section {
-  padding: 1em; }
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 5px; }
 
 .style-guide > section > h2:first-child {
   margin: 0;
-  font-weight: 200;
-  color: #888;
-  border-bottom: 1px solid #D6D6D6; }
+  border-bottom: 1px solid #222; }
 
-.headline {
-  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 7em;
-  line-height: .85;
-  margin-top: 2rem;
-  margin-bottom: 1rem; }
-
-.headline--secondary {
-  font-size: 5em; }
-
-html, body, p {
-  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+html, body {
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.4;
-  color: #222; }
+  color: #333; }
 
 h1, h2, h3, h4 {
   font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
@@ -166,22 +114,22 @@ h1, h2, h3, h4 {
   margin-bottom: .5em; }
 
 h1 {
-  font-size: 2.571em; }
+  font-size: 42px; }
 
 h1.heading-xl {
-  font-size: 3.857em; }
+  font-size: 60px; }
 
 h2 {
-  font-size: 1.714em; }
+  font-size: 36px; }
 
 h3 {
-  font-size: 1.571em; }
+  font-size: 24px; }
 
 h4 {
-  font-size: 1.286em; }
+  font-size: 18px; }
 
 h5, h6 {
-  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   line-height: 1;
@@ -190,10 +138,10 @@ h5, h6 {
   margin-bottom: .5em; }
 
 h5 {
-  font-size: 1em; }
+  font-size: 14px; }
 
 h6 {
-  font-size: 0.857em; }
+  font-size: 12px; }
 
 .style-guide h5 + p,
 .style-guide h6 + p {
@@ -206,7 +154,7 @@ a:hover {
   color: #EF9223; }
 
 .flood {
-  font-family: Flood, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Flood, Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal; }
 
@@ -214,44 +162,26 @@ pre {
   word-wrap: break-word;
   white-space: pre-wrap; }
 
-.bebas {
-  font-family: "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif; }
-
-.bebas-bold {
-  font-weight: bold; }
-
-.bebas-regular {
-  font-weight: normal; }
-
-.bebas-book {
-  font-weight: 300; }
-
-.bebas-light {
-  font-weight: 200; }
-
-.bebas-thin {
-  font-weight: 100; }
-
-.style-guide ul,
-.style-guide ol {
+.style-guide-page ul,
+.style-guide-page ol {
   padding-left: 2em; }
 
-.style-guide ul {
+.style-guide-page ul {
   list-style-type: disc; }
 
-.style-guide ol {
+.style-guide-page ol {
   list-style-type: decimal; }
 
-.style-guide li,
-.style-guide dl dt,
-.style-guide dl dd {
+.style-guide-page li,
+.style-guide-page dl dt,
+.style-guide-page dl dd {
   margin-top: .5em; }
 
 .leftnav {
   padding: 0;
-  color: #D6D6D6;
+  color: #888;
   list-style: none;
-  font: normal normal 11px HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal normal 11px Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
 
 .leftnav > li:first-child {
@@ -259,16 +189,12 @@ pre {
   font-weight: bold; }
 
 .btn {
-  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 1;
+  font: normal 700 24px/1 "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: none;
-  margin: .25em;
-  padding: .75em 2em;
+  margin: 5px;
+  padding: 10px 50px;
+  min-width: 134px;
   display: inline-block; }
 
 .btn:hover {
@@ -276,42 +202,60 @@ pre {
 
 .btn-primary {
   color: #FFF;
-  border: 1px solid #E87E17;
-  background: #E87E17;
-  /* Old browsers */ }
-
-.btn-primary:hover,
-.btn-primary.force-hover {
-  color: #FFF;
-  border: 1px solid #EF9223;
+  border: 1px solid #F17622;
   background: #EF9223;
-  /* Old browsers */ }
+  /* Old browsers */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EF9223), color-stop(100%, #F17622));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #EF9223 0%, #F17622 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #EF9223 0%, #F17622 100%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(top, #EF9223 0%, #F17622 100%);
+  /* IE10+ */
+  background: -o-linear-gradient(top, #EF9223 0%, #F17622 100%);
+  /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #EF9223 0%, #F17622 100%);
+  /* W3C */ }
+
+.btn-primary:hover, .btn-secondary {
+  color: #EF9223;
+  border: 1px solid #CCC;
+  background: #FFF;
+  /* Old browsers */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFF), color-stop(100%, #EFEFEF));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #FFF 0%, #EFEFEF 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #FFF 0%, #EFEFEF 100%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(top, #FFF 0%, #EFEFEF 100%);
+  /* IE10+ */
+  background: -o-linear-gradient(top, #FFF 0%, #EFEFEF 100%);
+  /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #FFF 0%, #EFEFEF 100%);
+  /* W3C */ }
 
 .btn-secondary {
-  color: #FFF;
-  border: 1px solid #888;
-  background: #888; }
+  color: #222; }
 
-.btn-secondary:hover,
-.btn-secondary.force-hover {
+.btn-secondary:hover {
   color: #FFF;
   border: 1px solid #222;
   background: #222; }
 
-.btn-inactive, .btn-inactive:hover,
-.btn-inactive.force-hover {
-  color: #FFF;
-  border: 1px solid #F1F1F1;
-  background: #F1F1F1; }
+.btn-inactive, .btn-inactive:hover {
+  color: #CCC;
+  border: 1px solid #CCC;
+  background: #EFEFEF; }
 
-.btn-inactive:hover,
-.force-hover.btn-inactive {
+.btn-inactive:hover {
   cursor: default; }
 
 .btn-small {
-  font-size: 11px;
-  padding: .5em 2em;
-  line-height: 2; }
+  font-size: 14px;
+  padding: 5px 25px;
+  min-width: 74px; }
 
 /* ====================
        Button Groups
@@ -327,60 +271,10 @@ pre {
 .btn-group-horizontal .btn {
   margin: 0; }
 
-#pageNav {
-  text-align: left;
-  width: 100%;
-  padding-top: 0; }
-
-#pageNav .currentPage {
-  font-weight: bold;
-  padding-left: 3px;
-  padding-right: 3px;
-  padding-bottom: 1px;
-  color: #000; }
-
-#pageNav a {
-  padding-left: 4px;
-  padding-right: 4px;
-  margin: 0;
-  text-decoration: none;
-  display: inline-block; }
-
-#pageNav .Next {
-  background: url("http://cache1.artprintimages.com/images/pub/gallerypage/Gallery_ImageSprite_orange_v1.png") no-repeat -49px -26px;
-  width: 18px;
-  height: 18px;
-  vertical-align: bottom;
-  border: 0;
-  display: inline-block; }
-
-#pageNav .view_per_page {
-  font-weight: normal;
-  margin-top: 0;
-  margin-right: 19px; }
-
-#pageNav .view_per_page ul {
-  float: right;
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
-#pageNav .view_per_page ul li {
-  float: left;
-  margin: 0;
-  padding: 1px 4px;
-  cursor: pointer; }
-
-#pageNav .view_per_page ul li:hover {
-  color: #EF9223; }
-
-#pageNav .view_per_page ul li:not(:last-child) {
-  border-right: 1px solid black; }
-
 blockquote:before {
   content: "\201C";
   font: normal 700 114px/0 "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
-  color: #D6D6D6;
+  color: #888;
   position: relative;
   top: 90px;
   display: inherit;
@@ -388,30 +282,30 @@ blockquote:before {
 
 blockquote p {
   font: normal 700 2.75em/1 "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
-  color: #D6D6D6;
+  color: #888;
   padding-left: 35px; }
 
 blockquote cite {
   display: block;
   text-align: right;
   font-style: normal;
-  color: #D6D6D6; }
+  color: #888; }
 
 blockquote cite:before {
   content: "– "; }
 
 .pricing-table {
   width: 100%;
-  border: 1px solid #D6D6D6;
+  border: 1px solid #CCC;
   border-collapse: collapse;
   text-align: center;
-  font: normal normal 12px/1.4 HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #888; }
+  font: normal normal 12px/1.4 Helvetica, Arial, sans-serif;
+  color: #333; }
 
 .pricing-table td,
 .pricing-table th {
-  border-left: 1px solid #D6D6D6;
-  border-right: 1px solid #D6D6D6; }
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC; }
 
 .pricing-table td {
   height: 30px;
@@ -421,10 +315,10 @@ blockquote cite:before {
   background-color: #FFF; }
 
 .pricing-table tr:nth-child(even) {
-  background-color: #F7F7F7; }
+  background-color: #EFEFEF; }
 
 .pricing-table tbody tr:last-child td {
-  border-bottom: 1px solid #D6D6D6; }
+  border-bottom: 1px solid #CCC; }
 
 .pricing-table td:first-child,
 .pricing-table th:first-child {
@@ -436,8 +330,8 @@ blockquote cite:before {
 
 .pricing-table th {
   font: normal bold 24px "BebasFamily", BebasNeueRegular, "Bebas Neue", BebasNeue, Helvetica, Arial, sans-serif;
-  border-bottom: 1px solid #F1F1F1;
-  background-color: #F1F1F1;
+  border-bottom: 1px solid #CCC;
+  background-color: #EFEFEF;
   padding: .5em; }
 
 .pricing-table caption {
@@ -454,8 +348,8 @@ blockquote cite:before {
   line-height: 30px;
   display: inline-block;
   margin-right: 10px;
-  background-color: #F1F1F1;
-  border: 1px solid #F1F1F1;
+  background-color: #CCC;
+  border: 1px solid #CCC;
   border-bottom: none; }
 
 .tabs-menu li:hover {
@@ -466,10 +360,10 @@ blockquote cite:before {
 .tabs-menu li.current {
   position: relative;
   background-color: #FFF;
-  border-top: 1px solid #F1F1F1;
-  border-right: 1px solid #F1F1F1;
+  border-top: 1px solid #CCC;
+  border-right: 1px solid #CCC;
   border-bottom: 1px solid #FFF;
-  border-left: 1px solid #F1F1F1;
+  border-left: 1px solid #CCC;
   z-index: 5; }
 
 .tabs-menu li a {
@@ -486,7 +380,7 @@ blockquote cite:before {
   color: #222; }
 
 .content-container {
-  border: 1px solid #F1F1F1;
+  border: 1px solid #CCC;
   background-color: #FFF;
   margin-bottom: 20px;
   width: auto; }
@@ -507,32 +401,22 @@ blockquote cite:before {
   background-color: #EF9223; }
 
 .color-block-deeporange {
-  background-color: #E87E17; }
-
-.color-block-blacker {
-  background-color: #000; }
+  background-color: #F17622; }
 
 .color-block-black {
   background-color: #222; }
 
-.color-block-darkergray {
-  background-color: #888; }
-
 .color-block-darkgray {
-  background-color: #C6C6C6; }
+  background-color: #333; }
 
 .color-block-gray {
-  background-color: #D6D6D6; }
+  background-color: #888; }
 
 .color-block-lightgray {
-  background-color: #F1F1F1; }
+  background-color: #CCC; }
 
-.color-block-lightergray {
-  background-color: #F7F7F7; }
-
-.color-block-white {
-  background-color: #FFF;
-  border: 1px solid #D6D6D6; }
+.color-block-offwhite {
+  background-color: #EFEFEF; }
 
 .style-guide-page .color-chart {
   padding: 0;
@@ -549,3 +433,5 @@ blockquote cite:before {
 
 .style-guide-page .color-chart li {
   margin: 0 1.5em; }
+
+/*# sourceMappingURL=styles.css.map */
