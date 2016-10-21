@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const gutil = require('gulp-util');
 const notify = require ('gulp-notify');
-const sass = require('gulp-sass');
+const stylus = require('gulp-stylus');
 //serve it
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
@@ -10,20 +10,20 @@ const fileinclude = require('gulp-file-include');
 const rename = require('gulp-rename');
 const path = require("path");
 var paths = {
-  templates: './templates/**'
+  templates: './source/templates/**'
 };
 
-gulp.task('sass', function () {
-    return gulp.src('./sass/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('css'))
-        .pipe(notify({ message: 'Sass: updated <%= file.relative %>' }))
+gulp.task('stylus', function () {
+  return gulp.src('./source/stylus/styles.styl')
+    .pipe(stylus())
+    .pipe(gulp.dest('./css'))
+    .pipe(browserSync.stream())
+    .pipe(notify({ message: 'Stylus: updated <%= file.relative %>' }));
 });
-
-gulp.task('sass-watch', ['sass'], function(done) {
-    gulp.watch('./sass/**/*.scss', ['sass']);
-    browserSync.reload();
-    done();
+gulp.task('stylus-watch', ['stylus'], function(done) {
+  gulp.watch('./source/stylus/**/*.styl', ['stylus']);
+  browserSync.reload();
+  done();
 });
 
 gulp.task('fileinclude', function() {
@@ -41,12 +41,12 @@ gulp.task('fileinclude', function() {
 
 });
 gulp.task('fileinclude-watch', ['fileinclude'], function(done) {
-  gulp.watch("./templates/**/*.html", ['fileinclude']);
+  gulp.watch("./source/templates/**/*.html", ['fileinclude']);
   browserSync.reload();
   done();
 });
 
-gulp.task('serve', ['sass-watch', 'fileinclude-watch'], function() {
+gulp.task('serve', ['stylus-watch', 'fileinclude-watch'], function() {
   browserSync.init({
       server: {
           baseDir: "./"
