@@ -13,6 +13,10 @@ var paths = {
   templates: './source/templates/**'
 };
 
+/*
+ * STYLES
+ */
+
 gulp.task('stylus', function () {
   return gulp.src('./source/stylus/styles.styl')
     .pipe(stylus())
@@ -26,9 +30,16 @@ gulp.task('stylus-watch', ['stylus'], function(done) {
   done();
 });
 
+/*
+ * Templates
+ */
+
 gulp.task('fileinclude', function() {
     return gulp.src(path.join(paths.templates, '*.tpl.html'))
-    .pipe(fileinclude())
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
     .pipe(rename({
       extname: ""
     }))
@@ -45,6 +56,11 @@ gulp.task('fileinclude-watch', ['fileinclude'], function(done) {
   browserSync.reload();
   done();
 });
+
+
+/*
+ * Serve
+ */
 
 gulp.task('serve', ['stylus-watch', 'fileinclude-watch'], function() {
   browserSync.init({
