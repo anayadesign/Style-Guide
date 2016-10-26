@@ -337,6 +337,11 @@ pre {
   width: 100%;
   padding-top: 0;
 }
+#pageNav:after {
+  content: '';
+  clear: both;
+  display: table;
+}
 #pageNav .currentPage {
   font-weight: bold;
   padding-left: 3px;

@@ -251,22 +251,82 @@ $font-stack-text = HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif
   <h2>Pagination</h2>
   <div id="pageNav">
     <div class="gFltRight">
-      <span class="currentPage">1</span>
-      <a href="/gallery/id--d207233/framed-art-prints_p2.htm">2</a>
-      <a href="/gallery/id--d207233/framed-art-prints_p3.htm">3</a>
-      <a href="/gallery/id--d207233/framed-art-prints_p4.htm">4</a>
-      <a href="/gallery/id--d207233/framed-art-prints_p5.htm">5</a>
-      <a href="/gallery/id--d207233/framed-art-prints_p2.htm" class="PrevNext"><span class="Next"></span></a>
+      <a href="#" class="currentPage">1</a>
+      <a href="#_p2.htm">2</a>
+      <a href="#_p3.htm">3</a>
+      <a href="#_p4.htm">4</a>
+      <a href="#_p5.htm">5</a>
+      <a href="#_p2.htm" class="PrevNext"><span class="Next"></span></a>
     </div>
     <div class="gFltRight view_per_page">
       View Per Page
       <ul>
-        <li>16</li>
+        <li onclick="selectNn(16,32,1,553);">16</li>
         <li id="per_page_selected">32</li>
-        <li>48</li>
+        <li onclick="selectNn(48,32,1,553);">48</li>
       </ul>
     </div>
   </div>
+  <pre><code class="html">&lt;!-- #pageNav : wrapper --&gt;
+&lt;div id="pageNav"&gt;
+  &lt;div class="gFltRight"&gt;
+    &lt;a href="#" class="currentPage"&gt;1&lt;/a&gt;
+    &lt;a href="#_p2.htm"&gt;2&lt;/a&gt;
+    &lt;a href="#_p3.htm"&gt;3&lt;/a&gt;
+    ...
+    &lt;!-- .PrevNext : clickable icon to proceed to the next sequential gallery page --&gt;
+    &lt;a href="#_p2.htm" class="PrevNext"&gt;&lt;span class="Next"&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;!-- .view_per_page : changes the amount of products visible per-page --&gt;
+  &lt;div class="gFltRight view_per_page"&gt;
+    View Per Page
+    &lt;ul&gt;
+      &lt;li onclick="selectNn(16,32,1,553);"&gt;16&lt;/li&gt;
+      &lt;li id="per_page_selected"&gt;32&lt;/li&gt;
+      &lt;li onclick="selectNn(48,32,1,553);"&gt;48&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code><code class="stylus">/*
+#pageNav contains all pagination links
+*/
+
+#pageNav .currentPage
+  font-weight: bold
+  padding-left: 3px
+  padding-right: 3px
+  padding-bottom: 1px
+  color: $color-blacker
+#pageNav a
+  padding-left: 4px
+  padding-right: 4px
+  margin: 0
+  text-decoration: none
+  display: inline-block
+#pageNav .Next
+  background: url("http://cache1.artprintimages.com/images/pub/gallerypage/Gallery_ImageSprite_orange_v1.png") no-repeat -49px -26px
+  width: 18px
+  height: 18px
+  vertical-align: bottom
+  border: 0
+  display: inline-block
+#pageNav .view_per_page
+  font-weight: normal
+  margin-top: 0
+  margin-right: 19px
+#pageNav .view_per_page ul
+  float: right
+  list-style-type: none
+  margin: 0
+  padding: 0
+#pageNav .view_per_page ul li
+  float: left
+  margin: 0
+  padding: 1px 4px
+  cursor: pointer
+#pageNav .view_per_page ul li:hover
+  color: $color-primary
+#pageNav .view_per_page ul li:not(:last-child)
+  border-right: 1px solid black</code></pre>
 </section>
 
       <section id="list-types">
